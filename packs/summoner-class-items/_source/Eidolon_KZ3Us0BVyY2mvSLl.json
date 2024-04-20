@@ -1,0 +1,123 @@
+{
+  "name": "Eidolon",
+  "type": "feat",
+  "_id": "KZ3Us0BVyY2mvSLl",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>At 1st level you begin with the ability to summon, to your side, a powerful extraplanar being called an eidolon. You can do so once per long rest through a ritual that takes 10 minutes, and it remains until dismissed through an action.The first time you summon your eidolon, you choose whether it's type is aberration, celestial, fey or fiend.</p><p>The eidolon does not heal naturally, however it's hit points refresh with each summon. The eidolon takes a form shaped by the summoner’s desires. It has the same alignment as you and can speak all of your languages. The eidolon cannot be sent back to its home plane by means of dispel magic, but spells such as banishment work normally.</p><p>The Eidolon obeys your commands as best it can. It rolls for initiative like any other creature, but you determine its actions, decisions, attitudes, and so on. If you are incapacitated or absent, your companion acts on its own.</p><p>The eidolon’s Hit Dice, saving throws, and abilities are tied to the summoner’s class level and increase as the summoner gains levels. In addition, each eidolon receives a pool of evolution points, based on the summoner’s class level, that can be used to give the eidolon different abilities and powers. Whenever the summoner gains a level, he must decide how these points are spent, and they are set until he gains another level of summoner. The eidolon’s physical appearance is up to the summoner, but it always appears as some sort of fantastical creature.</p><p>The eidolon also bears a glowing rune that is identical to a rune that appears on the summoner’s forehead as long as the eidolon is summoned. While this rune can be hidden through mundane means, it cannot be concealed through magic that changes appearance, such as alter self or polymorph (although invisibility does conceal it as long as the spell lasts).</p><p>If the summoner is unconscious, asleep, or killed, his eidolon is immediately banished</p>",
+      "chat": ""
+    },
+    "source": {},
+    "activation": {
+      "type": "minute",
+      "cost": 10,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "lr",
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": "",
+    "actionType": "summ",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": {
+      "match": {
+        "proficiency": false,
+        "attacks": false,
+        "saves": false
+      },
+      "bonuses": {
+        "ac": "",
+        "hp": "",
+        "attackDamage": "",
+        "saveDamage": "",
+        "healing": ""
+      },
+      "profiles": [
+        {
+          "name": "",
+          "_id": "7aZx76N1gx713gcE",
+          "uuid": "Compendium.summoner-class-for-5e.summoner-class-actors.Actor.tsWGY3hypnjThr5r"
+        },
+        {
+          "name": "",
+          "_id": "Bw8ZBa0zO3K93TGP",
+          "uuid": "Compendium.summoner-class-for-5e.summoner-class-actors.Actor.OkzuzgmzVDS41KUh"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": "zXeOsuNHDLanasQD",
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "rBA71lvKhtAgMqC9": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.1.1",
+    "coreVersion": "11.315",
+    "createdTime": 1711350980719,
+    "modifiedTime": 1712594641648,
+    "lastModifiedBy": "rBA71lvKhtAgMqC9"
+  },
+  "_key": "!items!KZ3Us0BVyY2mvSLl"
+}

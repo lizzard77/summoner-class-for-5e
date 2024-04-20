@@ -1,0 +1,98 @@
+{
+  "folder": "qXcBmVAAou9ssRP6",
+  "name": "Evolution: Claws",
+  "type": "feat",
+  "_id": "B8TKt25ICLfBLvKS",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Claws:</strong> An eidolon has a pair of vicious claws at the end of its limbs, giving it a claw attack. The claws deal 1d4 points of slashing damage (1d6 if Large, 1d8 if Huge). The eidolon must have the limb evolution to take this evolution. This evolution can only be applied to the limbs (legs) evolution once This evolution can be selected more than once, but the eidolon must possess an equal number of limb evolutions.</p><p>Drag this item to your character sheet to gain the attack:</p><p>@UUID[Compendium.summoner-class-for-5e.summoner-class-items.Item.cMHeer15BqD796vT]{Claws}</p>",
+      "chat": ""
+    },
+    "source": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": null,
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "properties": [],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "rBA71lvKhtAgMqC9": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.1.1",
+    "coreVersion": "11.315",
+    "createdTime": 1712594047161,
+    "modifiedTime": 1712594535864,
+    "lastModifiedBy": "rBA71lvKhtAgMqC9"
+  },
+  "_key": "!items!B8TKt25ICLfBLvKS"
+}

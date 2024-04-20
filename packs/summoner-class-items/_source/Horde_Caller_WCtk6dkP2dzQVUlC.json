@@ -1,0 +1,98 @@
+{
+  "folder": "zXeOsuNHDLanasQD",
+  "name": "Horde Caller",
+  "type": "feat",
+  "_id": "WCtk6dkP2dzQVUlC",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>At 18th level, a summoner can maintain the effects of a number of their summon monster feature equal to half their proficency bonus rounded rounded down. When you use summon monster this way treat it as if summon monster V is the highest version you can cast. A summoner does not benefit from this feature while their eidolon is active unless the eidolon is present due to the summon eidolon spell or they are affected by the Twin eidolon feature.</p><p>Additionaly while more than one summon monster effect is active the summoner has disadvantage on concentration check made to maintain spells.</p>",
+      "chat": ""
+    },
+    "source": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": null,
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "rBA71lvKhtAgMqC9": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1711384812078,
+    "modifiedTime": 1711384859910,
+    "lastModifiedBy": "rBA71lvKhtAgMqC9"
+  },
+  "_key": "!items!WCtk6dkP2dzQVUlC"
+}

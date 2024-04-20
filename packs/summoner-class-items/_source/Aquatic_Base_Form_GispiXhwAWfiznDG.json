@@ -1,0 +1,159 @@
+{
+  "folder": "vad5vnFNBGS6019n",
+  "name": "Aquatic Base Form",
+  "type": "feat",
+  "_id": "GispiXhwAWfiznDG",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Free Evolutions: </p><p>@UUID[Compendium.summoner-class-for-5e.summoner-class-items.Item.tftWSjnP0aGb7Y03]{Evolution: Bite}</p><p>@UUID[Compendium.summoner-class-for-5e.summoner-class-items.Item.B0ubaNwxhgydVo7i]{Evolution: Swim} x2</p><p>@UUID[Compendium.summoner-class-for-5e.summoner-class-items.Item.WaHyIkyYkq9a6047]{Evolution: Improved Natural Armor}</p>",
+      "chat": ""
+    },
+    "source": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": null,
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [
+    {
+      "name": "Set abilities",
+      "icon": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Compendium.summoner-class-for-5e.summoner-class-items.Item.GispiXhwAWfiznDG",
+      "duration": {
+        "rounds": 1,
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "_id": "OyrEBd5pAnNDPx0V",
+      "changes": [
+        {
+          "key": "system.abilities.str.value",
+          "mode": 5,
+          "value": "16",
+          "priority": null
+        },
+        {
+          "key": "system.abilities.dex.value",
+          "mode": 5,
+          "value": "12",
+          "priority": null
+        },
+        {
+          "key": "system.abilities.con.value",
+          "mode": 5,
+          "value": "13",
+          "priority": null
+        },
+        {
+          "key": "system.abilities.int.value",
+          "mode": 5,
+          "value": "7",
+          "priority": null
+        },
+        {
+          "key": "system.abilities.wis.value",
+          "mode": 5,
+          "value": "10",
+          "priority": null
+        },
+        {
+          "key": "system.abilities.cha.value",
+          "mode": 5,
+          "value": "11",
+          "priority": null
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": null,
+      "_key": "!items.effects!GispiXhwAWfiznDG.OyrEBd5pAnNDPx0V"
+    }
+  ],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "rBA71lvKhtAgMqC9": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.1.1",
+    "coreVersion": "11.315",
+    "createdTime": 1712072060698,
+    "modifiedTime": 1712078578250,
+    "lastModifiedBy": "rBA71lvKhtAgMqC9"
+  },
+  "_key": "!items!GispiXhwAWfiznDG"
+}

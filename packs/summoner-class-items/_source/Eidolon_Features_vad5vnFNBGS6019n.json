@@ -1,0 +1,19 @@
+{
+  "name": "Eidolon Features",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "vad5vnFNBGS6019n",
+  "sort": 0,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1711385466536,
+    "modifiedTime": 1711385466536,
+    "lastModifiedBy": "rBA71lvKhtAgMqC9"
+  },
+  "_key": "!folders!vad5vnFNBGS6019n"
+}

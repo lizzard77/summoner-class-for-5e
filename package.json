@@ -1,0 +1,13 @@
+{
+  "name": "summoner-class-for-5e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "unpack": "fvtt package unpack -n summoner-class-items && fvtt package unpack -n summoner-class-actors",
+    "pack": "fvtt package pack -n summoner-class-items && fvtt package pack -n summoner-class-actors"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

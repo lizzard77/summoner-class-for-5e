@@ -1,0 +1,98 @@
+{
+  "folder": "vad5vnFNBGS6019n",
+  "name": "Avian Base Form",
+  "type": "feat",
+  "_id": "RueiUmQapd0O6Swr",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>When summoned, an avian eidolon is Small unless it spends 2 points from its evolution pool, at which case it’s medium. At 5th level, a Medium or larger avian Eidolon’s flight speed increases by 40 feet, as if it had 2 more points in the flight evolution.</p><p><strong>Free Evolutions:</strong> </p><p>@UUID[Compendium.summoner-class-for-5e.summoner-class-items.Item.B8TKt25ICLfBLvKS]{Evolution: Claws}</p><p>@UUID[Compendium.summoner-class-for-5e.summoner-class-items.Item.dnSseLABc351p5oW]{Evolution: Flight}</p><p>@UUID[Compendium.summoner-class-for-5e.summoner-class-items.Item.Mb1s4Pf5arv2JD7a]{Evolution: Limbs} (legs)</p>",
+      "chat": ""
+    },
+    "source": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": null,
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "properties": [],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "rBA71lvKhtAgMqC9": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.1.1",
+    "coreVersion": "11.315",
+    "createdTime": 1712593972665,
+    "modifiedTime": 1712594285446,
+    "lastModifiedBy": "rBA71lvKhtAgMqC9"
+  },
+  "_key": "!items!RueiUmQapd0O6Swr"
+}

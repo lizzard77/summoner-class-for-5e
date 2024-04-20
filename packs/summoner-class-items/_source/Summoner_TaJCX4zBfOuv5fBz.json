@@ -1,0 +1,606 @@
+{
+  "name": "Summoner",
+  "type": "class",
+  "_id": "TaJCX4zBfOuv5fBz",
+  "img": "icons/magic/control/buff-flight-wings-runes-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>While many who dabble in the arcane become adept at beckoning monsters from the farthest reaches of the planes, none are more skilled at it than the summoner. This practitioner of the arcane arts forms a close bond with one particular outsider, known as an eidolon, who gains power as the summoner becomes more proficient at his summoning.</p><p>Over time, the two become linked, eventually even sharing a shard of the same soul. But this power comes with a price: the summoner’s spells and abilities are limited due to his time spent enhancing the power and exploring the nature of his eidolon.</p><p></p><img src=\"modules/summoner-class-for-5e/assets/ClassTable.png\" />",
+      "chat": ""
+    },
+    "source": {},
+    "startingEquipment": [
+      {
+        "type": "OR",
+        "requiresProficiency": false,
+        "_id": "xlIM8sZm6vTMr6Gb",
+        "group": "",
+        "sort": 0
+      },
+      {
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.dnd5e.items.Item.UOE8RGOpgv2oWIvM",
+        "requiresProficiency": false,
+        "_id": "uQMsxrxqAfaoN1jP",
+        "group": "xlIM8sZm6vTMr6Gb",
+        "sort": 900000
+      },
+      {
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.dnd5e.items.Item.8KWz5DJbWUpNWniP",
+        "requiresProficiency": false,
+        "_id": "mhV1Ardu3WorKewi",
+        "group": "xlIM8sZm6vTMr6Gb",
+        "sort": 1000000
+      },
+      {
+        "type": "OR",
+        "requiresProficiency": false,
+        "_id": "KwiryQkvaigAwscP",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "type": "weapon",
+        "count": null,
+        "key": "sim",
+        "requiresProficiency": false,
+        "_id": "4L1O8TRMLKlW3WoM",
+        "group": "KwiryQkvaigAwscP",
+        "sort": 300000
+      },
+      {
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.dnd5e.items.Item.ddWvQRLmnnIS0eLF",
+        "requiresProficiency": false,
+        "_id": "5t99KMnwz7eAlDR6",
+        "group": "KwiryQkvaigAwscP",
+        "sort": 400000
+      },
+      {
+        "type": "OR",
+        "requiresProficiency": false,
+        "_id": "mJrS877elIBanaaa",
+        "group": "",
+        "sort": 500000
+      },
+      {
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.dnd5e.items.Item.eZGmdOhaTWMicXPW",
+        "requiresProficiency": false,
+        "_id": "4Ws3uYHaRkG5Gg5E",
+        "group": "mJrS877elIBanaaa",
+        "sort": 600000
+      },
+      {
+        "type": "focus",
+        "count": null,
+        "key": "",
+        "requiresProficiency": false,
+        "_id": "owlVR3mF70iSZA47",
+        "group": "mJrS877elIBanaaa",
+        "sort": 1400000
+      },
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "JfijfrJJ7y1MSlJN",
+        "group": "",
+        "sort": 700000
+      },
+      {
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.dnd5e.items.Item.WwdpHLXGX5r8uZu5",
+        "requiresProficiency": false,
+        "_id": "vjAevUglQEPDMRnh",
+        "group": "JfijfrJJ7y1MSlJN",
+        "sort": 1100000
+      },
+      {
+        "type": "linked",
+        "count": 2,
+        "key": "Compendium.dnd5e.items.Item.0E565kQUBmndJ1a2",
+        "requiresProficiency": false,
+        "_id": "E2keIoWRQOgUZ2bP",
+        "group": "JfijfrJJ7y1MSlJN",
+        "sort": 1200000
+      },
+      {
+        "type": "weapon",
+        "count": null,
+        "key": "sim",
+        "requiresProficiency": false,
+        "_id": "ZTDTvJxVlequk2nM",
+        "group": "JfijfrJJ7y1MSlJN",
+        "sort": 1300000
+      }
+    ],
+    "identifier": "item",
+    "levels": 1,
+    "hitDice": "d8",
+    "hitDiceUsed": 0,
+    "advancement": [
+      {
+        "_id": "5NAtE2XA9KrTL4iV",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.summoner-class-for-5e.summoner-class-items.Item.TBc6efrwkSAx63MT"
+            },
+            {
+              "uuid": "Compendium.summoner-class-for-5e.summoner-class-items.Item.KZ3Us0BVyY2mvSLl"
+            },
+            {
+              "uuid": "Compendium.summoner-class-for-5e.summoner-class-items.Item.3bmlzV055YKyclYE"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1
+      },
+      {
+        "_id": "096K5qOzbQrlCEFX",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {},
+        "title": "",
+        "icon": null,
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "ApPdjbWCbfE19NCz",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:ani",
+                "skills:arc",
+                "skills:his",
+                "skills:ins",
+                "skills:itm",
+                "skills:per"
+              ]
+            }
+          ],
+          "hint": ""
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "",
+        "icon": null,
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "TtHCC9CmB5ZQhjCN",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.summoner-class-for-5e.summoner-class-items.Item.Q4WIkels24YDRcmg"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 2,
+        "title": "",
+        "icon": null
+      },
+      {
+        "_id": "IbH2z3GjnCAohaq0",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 4,
+        "title": "",
+        "icon": null
+      },
+      {
+        "_id": "hD3U9fzWIplMihpU",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 8,
+        "title": "",
+        "icon": null
+      },
+      {
+        "_id": "sQeew5wNCu9IOcNJ",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 12,
+        "title": "",
+        "icon": null
+      },
+      {
+        "_id": "7StOFHemZy7BfkZ3",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 19,
+        "title": "",
+        "icon": null
+      },
+      {
+        "_id": "3QPllvli9dx53PMU",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.summoner-class-for-5e.summoner-class-items.Item.qfssFAKCVCghhqEQ"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "",
+        "icon": null
+      },
+      {
+        "_id": "cLrTrn8G0YUjrkG9",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.summoner-class-for-5e.summoner-class-items.Item.Vk9ADctbhJ6QUelf"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 7,
+        "title": "",
+        "icon": null
+      },
+      {
+        "_id": "wAPw87LGoFi8sCrX",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.summoner-class-for-5e.summoner-class-items.Item.GP4StVWQkGAD1Nkk"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 10,
+        "title": "",
+        "icon": null
+      },
+      {
+        "_id": "lAmFSW0fwhJGrfsV",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.summoner-class-for-5e.summoner-class-items.Item.IdPVOWjC8yqn40Mg"
+            },
+            {
+              "uuid": "Compendium.summoner-class-for-5e.summoner-class-items.Item.2Zcy3h9Hfsgg3Vqw"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 14,
+        "title": "",
+        "icon": null
+      },
+      {
+        "_id": "kwZbitotN42BDJCV",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.summoner-class-for-5e.summoner-class-items.Item.WCtk6dkP2dzQVUlC"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 18,
+        "title": "",
+        "icon": null
+      },
+      {
+        "_id": "DDi1ozYFa1bNYTkC",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.summoner-class-for-5e.summoner-class-items.Item.30pjpMkJSMrCT644"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 20,
+        "title": "",
+        "icon": null
+      },
+      {
+        "_id": "b5aBBuIdv6DOR64v",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {}
+        },
+        "value": {},
+        "title": "Spell Slots",
+        "icon": null,
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "QEm4sdbBuhOHb6Xq",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "",
+          "type": "string",
+          "distance": {
+            "units": ""
+          },
+          "scale": {}
+        },
+        "value": {}
+      },
+      {
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "cantrips-known",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "1": {
+              "value": 2
+            },
+            "4": {
+              "value": 3
+            },
+            "10": {
+              "value": 4
+            }
+          }
+        },
+        "value": {},
+        "title": "Cantrips Known",
+        "icon": "systems/dnd5e/icons/svg/scale-value.svg",
+        "_id": "IXXGQe1feA5cBsOH"
+      },
+      {
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "spells-known",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "1": {
+              "value": 2
+            },
+            "2": {
+              "value": 3
+            },
+            "3": {
+              "value": 4
+            },
+            "4": {
+              "value": 5
+            },
+            "5": {
+              "value": 6
+            },
+            "6": {
+              "value": 7
+            },
+            "7": {
+              "value": 8
+            },
+            "8": {
+              "value": 9
+            },
+            "9": {
+              "value": 10
+            },
+            "11": {
+              "value": 11
+            },
+            "13": {
+              "value": 12
+            },
+            "15": {
+              "value": 13
+            },
+            "17": {
+              "value": 14
+            },
+            "19": {
+              "value": 15
+            }
+          }
+        },
+        "value": {},
+        "title": "Spells Known",
+        "icon": "systems/dnd5e/icons/svg/scale-value.svg",
+        "_id": "zfiyBsaOuE359vfA"
+      },
+      {
+        "_id": "GJyTV3jBRUeRg0Q3",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "saves:wis",
+            "saves:cha"
+          ],
+          "choices": [],
+          "hint": ""
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "",
+        "icon": null,
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "sYNCgTqiOKXG4PPt",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "armor:lgt"
+          ],
+          "choices": [],
+          "hint": ""
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "",
+        "icon": null,
+        "classRestriction": "primary"
+      },
+      {
+        "_id": "6GxBwvkt6QrWM7Qq",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "weapon:sim"
+          ],
+          "choices": [],
+          "hint": ""
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "",
+        "icon": null
+      },
+      {
+        "_id": "0L7Vo6POCuH4B4YH",
+        "type": "ItemChoice",
+        "configuration": {
+          "choices": {},
+          "allowDrops": true,
+          "type": null,
+          "pool": [],
+          "spell": null
+        },
+        "value": {}
+      }
+    ],
+    "spellcasting": {
+      "progression": "half",
+      "ability": "cha"
+    },
+    "wealth": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "rBA71lvKhtAgMqC9": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.1.2",
+    "coreVersion": "11.315",
+    "createdTime": 1711349108458,
+    "modifiedTime": 1713345362305,
+    "lastModifiedBy": "rBA71lvKhtAgMqC9"
+  },
+  "_key": "!items!TaJCX4zBfOuv5fBz"
+}

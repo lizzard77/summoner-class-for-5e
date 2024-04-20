@@ -1,0 +1,847 @@
+{
+  "name": "Dolphin",
+  "img": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/MPMM/Dolphin.webp",
+  "type": "npc",
+  "flags": {
+    "plutonium": {
+      "page": "bestiary.html",
+      "source": "MPMM",
+      "hash": "dolphin_mpmm"
+    },
+    "core": {}
+  },
+  "ownership": {
+    "default": 0,
+    "rBA71lvKhtAgMqC9": 3
+  },
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 14,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": "0"
+        },
+        "max": null
+      },
+      "dex": {
+        "value": 13,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": "0"
+        },
+        "max": null
+      },
+      "con": {
+        "value": 13,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": "0"
+        },
+        "max": null
+      },
+      "int": {
+        "value": 6,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": "0"
+        },
+        "max": null
+      },
+      "wis": {
+        "value": 12,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": "0"
+        },
+        "max": null
+      },
+      "cha": {
+        "value": 7,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": "0"
+        },
+        "max": null
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 12,
+        "calc": "natural"
+      },
+      "hp": {
+        "value": 11,
+        "max": 11,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": "2d8 + 2"
+      },
+      "init": {
+        "bonus": "0",
+        "ability": "",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "movement": {
+        "burrow": null,
+        "climb": null,
+        "fly": null,
+        "swim": 60,
+        "walk": 0,
+        "units": "ft",
+        "hover": false
+      },
+      "spellcasting": "",
+      "senses": {
+        "darkvision": 0,
+        "blindsight": 60,
+        "tremorsense": 0,
+        "truesight": 0,
+        "units": "ft",
+        "special": ""
+      },
+      "attunement": {
+        "max": 3
+      },
+      "exhaustion": 0,
+      "concentration": {
+        "ability": "",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "bonuses": {
+          "save": ""
+        },
+        "limit": 1
+      },
+      "death": {
+        "ability": "",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "success": 0,
+        "failure": 0
+      }
+    },
+    "details": {
+      "alignment": "unaligned",
+      "biography": {
+        "value": "<div class=\"rd__b  rd__b--1\"><p>Dolphins are symbols of wisdom and playfulness among the sea folk of many worlds. Found in oceans and in the Elemental Plane of Water, dolphins are befriended by druids and rangers, and many tales speak of dolphins that appeared out of nowhere to protect swimmers from sharks and other aquatic predators.</p></div><div class=\"rd__b  rd__b--0\"><h1 class=\"rd__h rd__h--0\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Dolphins</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable no-select\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h1> <p>Dolphins are clever, social marine mammals that feed on small fish and squid. An adult specimen is between 5 and 6 feet long.</p></div>",
+        "public": ""
+      },
+      "spellLevel": 0,
+      "race": null,
+      "type": {
+        "value": "beast",
+        "subtype": ""
+      },
+      "environment": "Coastal, Underwater",
+      "cr": 0.125,
+      "source": {
+        "custom": "",
+        "book": "MPMM",
+        "page": "97",
+        "license": ""
+      }
+    },
+    "skills": {
+      "acr": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ani": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "arc": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ath": {
+        "value": 0,
+        "ability": "str",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "dec": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "his": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ins": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "itm": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "inv": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "med": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "nat": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "prc": {
+        "value": 1,
+        "ability": "wis",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "prf": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "per": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "rel": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "slt": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ste": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "sur": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      }
+    },
+    "traits": {
+      "size": "med",
+      "languages": {
+        "value": [],
+        "custom": ""
+      },
+      "di": {
+        "value": [],
+        "custom": "",
+        "bypasses": []
+      },
+      "dr": {
+        "value": [],
+        "custom": "",
+        "bypasses": []
+      },
+      "dv": {
+        "value": [],
+        "custom": "",
+        "bypasses": []
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "dm": {
+        "amount": {},
+        "bypasses": []
+      }
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "ep": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "spells": {
+      "spell0": {
+        "value": 0,
+        "override": null
+      },
+      "spell1": {
+        "value": 0,
+        "override": null
+      },
+      "spell2": {
+        "value": 0,
+        "override": null
+      },
+      "spell3": {
+        "value": 0,
+        "override": null
+      },
+      "spell4": {
+        "value": 0,
+        "override": null
+      },
+      "spell5": {
+        "value": 0,
+        "override": null
+      },
+      "spell6": {
+        "value": 0,
+        "override": null
+      },
+      "spell7": {
+        "value": 0,
+        "override": null
+      },
+      "spell8": {
+        "value": 0,
+        "override": null
+      },
+      "spell9": {
+        "value": 0,
+        "override": null
+      }
+    },
+    "resources": {
+      "legact": {
+        "value": 0,
+        "max": 0
+      },
+      "legres": {
+        "value": 0,
+        "max": 0
+      },
+      "lair": {
+        "value": false,
+        "initiative": 20
+      }
+    },
+    "bonuses": {
+      "mwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "msak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rsak": {
+        "attack": "",
+        "damage": ""
+      },
+      "abilities": {
+        "check": "",
+        "save": "",
+        "skill": ""
+      },
+      "spell": {
+        "dc": ""
+      }
+    },
+    "tools": {}
+  },
+  "prototypeToken": {
+    "displayName": 20,
+    "sight": {
+      "enabled": true,
+      "range": 60,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "detectionModes": [
+      {
+        "id": "blindsight",
+        "range": 60,
+        "enabled": true
+      }
+    ],
+    "name": "Dolphin",
+    "texture": {
+      "src": "assets/srd5e/img/bestiary/tokens/MPMM/Dolphin.webp",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "rotation": 0,
+    "actorLink": false,
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "lockRotation": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    }
+  },
+  "items": [
+    {
+      "system": {
+        "type": {
+          "value": "natural",
+          "baseItem": ""
+        },
+        "damage": {
+          "parts": [
+            [
+              "1d6  + @mod",
+              "bludgeoning"
+            ],
+            [
+              "1d6",
+              "bludgeoning"
+            ]
+          ],
+          "versatile": ""
+        },
+        "source": {
+          "custom": "",
+          "book": "MPMM",
+          "page": "97",
+          "license": ""
+        },
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft., one target. <i>Hit:</i> 5 ([[/damage 1d6 + 2 ]]) bludgeoning damage. If the dolphin moved at least 30 feet straight toward the target immediately before the hit, the target takes an extra 3 ([[/damage 1d6 ]]) bludgeoning damage.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": ""
+        },
+        "range": {
+          "value": 5,
+          "long": null,
+          "units": "ft"
+        },
+        "proficient": 1,
+        "save": {
+          "scaling": "flat",
+          "ability": "",
+          "dc": null
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "target": {
+          "prompt": true,
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "ability": "str",
+        "actionType": "mwak",
+        "attack": {
+          "bonus": "",
+          "flat": false
+        },
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "formula": "",
+        "properties": [],
+        "identified": true,
+        "unidentified": {
+          "description": ""
+        },
+        "container": null,
+        "quantity": 1,
+        "weight": 0,
+        "price": {
+          "value": 0,
+          "denomination": "gp"
+        },
+        "rarity": "",
+        "attunement": 0,
+        "equipped": true,
+        "duration": {
+          "value": "",
+          "units": ""
+        },
+        "cover": null,
+        "crewed": false,
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null,
+          "recovery": "",
+          "prompt": true
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null,
+          "scale": false
+        },
+        "summons": null,
+        "armor": {
+          "value": null
+        },
+        "hp": {
+          "value": null,
+          "max": null,
+          "dt": null,
+          "conditions": ""
+        },
+        "magicalBonus": null
+      },
+      "_id": "4JYxrhfUobGJrFMv",
+      "name": "Slam",
+      "type": "weapon",
+      "ownership": {
+        "default": 0
+      },
+      "img": "icons/equipment/hand/gauntlet-tooled-leather-brown.webp",
+      "flags": {
+        "plutonium": {
+          "page": "monsterAction",
+          "source": "MPMM",
+          "hash": "slam_dolphin_mpmm_mpmm"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!pSsZA5DRytAE81zX.4JYxrhfUobGJrFMv"
+    },
+    {
+      "_id": "vCXVtVl55M4Y8sbm",
+      "name": "Hold Breath",
+      "type": "feat",
+      "system": {
+        "source": {
+          "custom": "",
+          "book": "MPMM",
+          "page": "97",
+          "license": ""
+        },
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>The dolphin can hold its breath for 20 minutes.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "duration": {
+          "value": "",
+          "units": ""
+        },
+        "range": {
+          "units": "",
+          "value": null,
+          "long": null
+        },
+        "save": {
+          "scaling": "flat",
+          "ability": "",
+          "dc": null
+        },
+        "activation": {
+          "type": "",
+          "cost": null,
+          "condition": ""
+        },
+        "target": {
+          "prompt": true,
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null,
+          "recovery": "",
+          "prompt": true
+        },
+        "actionType": "other",
+        "attack": {
+          "bonus": "",
+          "flat": false
+        },
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "formula": "",
+        "recharge": {
+          "charged": false,
+          "value": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null,
+          "scale": false
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "properties": [],
+        "cover": null,
+        "crewed": false,
+        "ability": null,
+        "summons": null,
+        "requirements": ""
+      },
+      "ownership": {
+        "default": 0
+      },
+      "img": "icons/commodities/gems/pearl-turquoise.webp",
+      "flags": {
+        "plutonium": {
+          "page": "monsterTrait",
+          "source": "MPMM",
+          "hash": "hold%20breath_dolphin_mpmm_mpmm"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!pSsZA5DRytAE81zX.vCXVtVl55M4Y8sbm"
+    }
+  ],
+  "effects": [],
+  "folder": "4sUDpEQJozY2DFSY",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.1.1",
+    "coreVersion": "11.315",
+    "createdTime": 1712593661716,
+    "modifiedTime": 1712594712893,
+    "lastModifiedBy": "rBA71lvKhtAgMqC9"
+  },
+  "_id": "pSsZA5DRytAE81zX",
+  "sort": 0,
+  "_key": "!actors!pSsZA5DRytAE81zX"
+}

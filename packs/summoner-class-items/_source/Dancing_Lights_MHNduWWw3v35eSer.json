@@ -1,0 +1,122 @@
+{
+  "name": "Dancing Lights",
+  "type": "spell",
+  "system": {
+    "source": {
+      "custom": "",
+      "book": "PHB",
+      "page": "230",
+      "license": ""
+    },
+    "description": {
+      "value": "<div class=\"rd__b  rd__b--3\"><p>You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius.</p><div class=\"rd__spc-inline-post\"></div><p>As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell's range.</p></div>",
+      "chat": ""
+    },
+    "actionType": "util",
+    "level": 0,
+    "school": "evo",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "materials": {
+      "value": "a bit of phosphorus or wychwood, or a glowworm",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "target": {
+      "value": 0,
+      "units": "any",
+      "type": "space",
+      "prompt": true,
+      "width": null
+    },
+    "range": {
+      "value": 120,
+      "units": "ft",
+      "long": null
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "ability": null,
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "formula": "",
+    "preparation": {
+      "mode": "always",
+      "prepared": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "cover": null,
+    "crewed": false,
+    "summons": null
+  },
+  "img": "icons/magic/light/orbs-firefly-hand-yellow.webp",
+  "ownership": {
+    "default": 0,
+    "rBA71lvKhtAgMqC9": 3
+  },
+  "flags": {
+    "plutonium": {
+      "page": "spells.html",
+      "source": "PHB",
+      "hash": "dancing%20lights_phb",
+      "propDroppable": "spell"
+    }
+  },
+  "effects": [],
+  "folder": "p18Mv3tcXOpxXnyh",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.1.1",
+    "coreVersion": "11.315",
+    "createdTime": 1711706965379,
+    "modifiedTime": 1712071569699,
+    "lastModifiedBy": "rBA71lvKhtAgMqC9"
+  },
+  "_id": "MHNduWWw3v35eSer",
+  "sort": 200000,
+  "_key": "!items!MHNduWWw3v35eSer"
+}

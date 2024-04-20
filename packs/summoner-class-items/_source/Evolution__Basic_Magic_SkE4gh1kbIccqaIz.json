@@ -1,0 +1,98 @@
+{
+  "folder": "qXcBmVAAou9ssRP6",
+  "name": "Evolution: Basic Magic",
+  "type": "feat",
+  "_id": "SkE4gh1kbIccqaIz",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>An eidolon learns to cast a basic spell as an innate spellcasting ability. Select one spell from the list below. This spell can be cast once per day as an action.</p><p>At 4th level, this spell can be cast three times per day by spending 2 additional evolution points. The save DC for this spell is 10 + the Eidolon’s Charisma modifier. The eidolon must have a Charisma score of at least 10 to take this evolution.</p><p>This evolution can be selected more than once. Each time an eidolon selects this evolution, it applies to a new spell.</p><p>@UUID[Compendium.dnd5e.items.Sx5E6utixHdAbGNb]{Acid (vial)} @UUID[Compendium.dnd5e.spells.CAxSzHWizrafT033]{Dancing Lights} @UUID[Compendium.dnd5e.spells.ghXTfe7sgCbgf1Q8]{Detect Magic} @UUID[Compendium.dnd5e.spells.Bnn9Nzajixvow9xi]{Light} @UUID[Compendium.dnd5e.spells.Utk1OQRwYkMkFRD3]{Mage Hand} @UUID[Compendium.dnd5e.spells.oIzA2MEHwxhtQneU]{Minor Illusion} @UUID[Compendium.dnd5e.spells.ctW81uiX56xZR2c5]{Ray of Frost} @UUID[Compendium.dnd5e.spells.8zT7njvqbpXs4Cel]{Spare the Dying}</p><p></p><p></p>",
+      "chat": ""
+    },
+    "source": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": null,
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "properties": [],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "rBA71lvKhtAgMqC9": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.1.1",
+    "coreVersion": "11.315",
+    "createdTime": 1712072846239,
+    "modifiedTime": 1712078526693,
+    "lastModifiedBy": "rBA71lvKhtAgMqC9"
+  },
+  "_key": "!items!SkE4gh1kbIccqaIz"
+}

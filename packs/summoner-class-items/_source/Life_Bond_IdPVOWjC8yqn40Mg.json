@@ -1,0 +1,98 @@
+{
+  "folder": "zXeOsuNHDLanasQD",
+  "name": "Life Bond",
+  "type": "feat",
+  "_id": "IdPVOWjC8yqn40Mg",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>At 14th level, the bond between you and your eidolon is stronger than ever. While you have your eidolon summoner, as a reaction you can transfer any number of your hit points to heal your eidolon. Alternatively you can use this feature to heal yourself by transfering hitpoints from the eidolon.</p><p>Additionally, when you are reduced to 0 hit points but not killed outright, you can immediately banish your eidolon back to it's home plane, causing you to drop to 1 hit point instead. You can’t use this feature again until you finish a long rest.</p>",
+      "chat": ""
+    },
+    "source": {},
+    "activation": {
+      "type": "reaction",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "lr",
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": null,
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "rBA71lvKhtAgMqC9": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1711384216191,
+    "modifiedTime": 1711384275434,
+    "lastModifiedBy": "rBA71lvKhtAgMqC9"
+  },
+  "_key": "!items!IdPVOWjC8yqn40Mg"
+}

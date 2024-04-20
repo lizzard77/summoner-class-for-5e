@@ -1,0 +1,1685 @@
+{
+  "name": "Aquatic",
+  "type": "npc",
+  "img": "icons/creatures/fish/deepsea-creature-glowing-blue.webp",
+  "system": {
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "ep": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "abilities": {
+      "str": {
+        "value": 16,
+        "proficient": 1,
+        "max": null,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "dex": {
+        "value": 12,
+        "proficient": 0,
+        "max": null,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "con": {
+        "value": 13,
+        "proficient": 1,
+        "max": null,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "int": {
+        "value": 7,
+        "proficient": 0,
+        "max": null,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0,
+        "max": null,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "cha": {
+        "value": 11,
+        "proficient": 0,
+        "max": null,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      }
+    },
+    "bonuses": {
+      "mwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "msak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rsak": {
+        "attack": "",
+        "damage": ""
+      },
+      "abilities": {
+        "check": "",
+        "save": "",
+        "skill": ""
+      },
+      "spell": {
+        "dc": ""
+      }
+    },
+    "skills": {
+      "acr": {
+        "ability": "dex",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "ani": {
+        "ability": "wis",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "arc": {
+        "ability": "int",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "ath": {
+        "ability": "str",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "dec": {
+        "ability": "cha",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "his": {
+        "ability": "int",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "ins": {
+        "ability": "wis",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "itm": {
+        "ability": "cha",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "inv": {
+        "ability": "int",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "med": {
+        "ability": "wis",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "nat": {
+        "ability": "int",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "prc": {
+        "ability": "wis",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "prf": {
+        "ability": "cha",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "per": {
+        "ability": "cha",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "rel": {
+        "ability": "int",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "slt": {
+        "ability": "dex",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "ste": {
+        "ability": "dex",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "sur": {
+        "ability": "wis",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      }
+    },
+    "tools": {},
+    "spells": {
+      "spell1": {
+        "value": 0,
+        "override": null
+      },
+      "spell2": {
+        "value": 0,
+        "override": null
+      },
+      "spell3": {
+        "value": 0,
+        "override": null
+      },
+      "spell4": {
+        "value": 0,
+        "override": null
+      },
+      "spell5": {
+        "value": 0,
+        "override": null
+      },
+      "spell6": {
+        "value": 0,
+        "override": null
+      },
+      "spell7": {
+        "value": 0,
+        "override": null
+      },
+      "spell8": {
+        "value": 0,
+        "override": null
+      },
+      "spell9": {
+        "value": 0,
+        "override": null
+      },
+      "pact": {
+        "value": 0,
+        "override": null
+      }
+    },
+    "attributes": {
+      "init": {
+        "ability": "",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "bonus": ""
+      },
+      "movement": {
+        "burrow": null,
+        "climb": null,
+        "fly": null,
+        "swim": 0,
+        "walk": 20,
+        "units": null,
+        "hover": false
+      },
+      "attunement": {
+        "max": 3
+      },
+      "senses": {
+        "darkvision": null,
+        "blindsight": null,
+        "tremorsense": null,
+        "truesight": null,
+        "units": null,
+        "special": ""
+      },
+      "spellcasting": "int",
+      "exhaustion": 0,
+      "concentration": {
+        "ability": "",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "bonuses": {
+          "save": ""
+        },
+        "limit": 1
+      },
+      "ac": {
+        "flat": 13,
+        "calc": "natural"
+      },
+      "hp": {
+        "value": 17,
+        "max": 10,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": ""
+      },
+      "death": {
+        "ability": "",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "success": 0,
+        "failure": 0
+      }
+    },
+    "details": {
+      "biography": {
+        "value": "",
+        "public": ""
+      },
+      "alignment": "",
+      "race": null,
+      "type": {},
+      "environment": "",
+      "cr": 1,
+      "spellLevel": 0,
+      "source": {}
+    },
+    "resources": {
+      "legact": {
+        "value": 0,
+        "max": 0
+      },
+      "legres": {
+        "value": 0,
+        "max": 0
+      },
+      "lair": {
+        "value": false,
+        "initiative": null
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "bypasses": [],
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "bypasses": [],
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "bypasses": [],
+        "value": [],
+        "custom": ""
+      },
+      "dm": {
+        "amount": {},
+        "bypasses": []
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Aquatic",
+    "displayName": 0,
+    "actorLink": true,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/creatures/fish/deepsea-creature-glowing-blue.webp",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "tint": null
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "color": null
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0,
+      "color": null
+    },
+    "detectionModes": [],
+    "flags": {
+      "dnd5e": {
+        "tokenRing": {
+          "enabled": false,
+          "textures": {
+            "subject": ""
+          },
+          "scaleCorrection": 1,
+          "colors": {
+            "ring": "",
+            "background": ""
+          },
+          "effects": 1
+        }
+      }
+    },
+    "randomImg": false
+  },
+  "items": [
+    {
+      "name": "Eidolon",
+      "type": "class",
+      "_id": "qiokD7d0CyBCvyHy",
+      "img": "icons/creatures/magical/spirit-undead-ghost-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>An eidolon’s abilities are determined by the summoner’s level and by the choices made using its evolution pool. Each eidolon possesses a base form that modifies its base statistics.</p><p></p><p></p>",
+          "chat": ""
+        },
+        "source": {},
+        "startingEquipment": [],
+        "identifier": "item",
+        "levels": 1,
+        "hitDice": "d10",
+        "hitDiceUsed": 0,
+        "advancement": [
+          {
+            "_id": "MQKWnqr8EPgVJo3V",
+            "type": "HitPoints",
+            "configuration": {},
+            "value": {
+              "1": "avg"
+            },
+            "title": "",
+            "icon": null,
+            "classRestriction": "primary"
+          },
+          {
+            "_id": "Caz1xPpWdUHmKMME",
+            "type": "ScaleValue",
+            "configuration": {
+              "identifier": "",
+              "type": "number",
+              "distance": {
+                "units": ""
+              },
+              "scale": {
+                "1": {
+                  "value": 3
+                },
+                "2": {
+                  "value": 4
+                },
+                "3": {
+                  "value": 5
+                },
+                "4": {
+                  "value": 7
+                },
+                "5": {
+                  "value": 8
+                },
+                "6": {
+                  "value": 9
+                },
+                "7": {
+                  "value": 10
+                },
+                "8": {
+                  "value": 11
+                },
+                "9": {
+                  "value": 13
+                },
+                "10": {
+                  "value": 14
+                },
+                "11": {
+                  "value": 15
+                },
+                "12": {
+                  "value": 16
+                },
+                "13": {
+                  "value": 17
+                },
+                "14": {
+                  "value": 19
+                },
+                "15": {
+                  "value": 20
+                },
+                "16": {
+                  "value": 21
+                },
+                "17": {
+                  "value": 22
+                },
+                "18": {
+                  "value": 23
+                },
+                "19": {
+                  "value": 25
+                },
+                "20": {
+                  "value": 26
+                }
+              }
+            },
+            "value": {},
+            "title": "Evolution Pool",
+            "icon": null,
+            "classRestriction": "primary"
+          },
+          {
+            "_id": "J2Zyxh65vm988A4V",
+            "type": "ItemGrant",
+            "configuration": {
+              "items": [
+                {
+                  "uuid": "Compendium.summoner-class-for-5e.summoner-class-items.Item.txLYLJKZQKYF42CX"
+                }
+              ],
+              "optional": false,
+              "spell": null
+            },
+            "value": {
+              "added": {
+                "g81ndhFP87qwoMce": "Compendium.summoner-class-for-5e.summoner-class-items.Item.txLYLJKZQKYF42CX"
+              }
+            },
+            "level": 1
+          },
+          {
+            "_id": "hXWHcNFqfs2qpsBp",
+            "type": "Trait",
+            "configuration": {
+              "mode": "default",
+              "allowReplacements": false,
+              "grants": [
+                "saves:str",
+                "saves:con"
+              ],
+              "choices": [
+                {
+                  "count": 2,
+                  "pool": [
+                    "skills:acr",
+                    "skills:ath",
+                    "skills:itm",
+                    "skills:prc",
+                    "skills:ste",
+                    "skills:sur"
+                  ]
+                }
+              ],
+              "hint": ""
+            },
+            "value": {
+              "chosen": [
+                "saves:str",
+                "saves:con",
+                "skills:ath",
+                "skills:acr"
+              ]
+            },
+            "level": 1,
+            "title": "Eidolon Traits",
+            "icon": null
+          }
+        ],
+        "spellcasting": {
+          "progression": "none",
+          "ability": ""
+        },
+        "wealth": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "rBA71lvKhtAgMqC9": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.summoner-class-for-5e.summoner-class-items.Item.BUNOBh3pmiEzrpm9"
+        }
+      },
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "3.1.1",
+        "coreVersion": "11.315",
+        "createdTime": 1711384976749,
+        "modifiedTime": 1712078120524,
+        "lastModifiedBy": "rBA71lvKhtAgMqC9"
+      },
+      "_key": "!actors.items!tsWGY3hypnjThr5r.qiokD7d0CyBCvyHy"
+    },
+    {
+      "folder": "vad5vnFNBGS6019n",
+      "name": "Evolution Pool",
+      "type": "feat",
+      "_id": "g81ndhFP87qwoMce",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "system": {
+        "description": {
+          "value": "<p>The value given in this column is the total number of points in the eidolon’s evolution pool. Points from this pool can be spent on a wide variety of modifications and upgrades that add new abilities, attacks, and powers to the eidolon. Whenever the summoner gains a level, the number in this pool increases and the summoner can spend these points to change the abilities of the eidolon. These choices are not set. The summoner can change them whenever he gains a level.</p><img src=\"modules/summoner-class-for-5e/assets/EidolonTable.png\" />",
+          "chat": ""
+        },
+        "source": {},
+        "activation": {
+          "type": "",
+          "cost": null,
+          "condition": ""
+        },
+        "duration": {
+          "value": "",
+          "units": ""
+        },
+        "cover": null,
+        "crewed": false,
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": "",
+          "prompt": true
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null,
+          "recovery": "",
+          "prompt": true
+        },
+        "consume": {
+          "type": "attribute",
+          "target": "",
+          "amount": null,
+          "scale": false
+        },
+        "ability": "",
+        "actionType": "",
+        "attack": {
+          "bonus": "",
+          "flat": false
+        },
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "summons": null,
+        "type": {
+          "value": "class",
+          "subtype": ""
+        },
+        "properties": [],
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "effects": [],
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "rBA71lvKhtAgMqC9": 3
+      },
+      "flags": {
+        "dnd5e": {
+          "sourceId": "Compendium.summoner-class-for-5e.summoner-class-items.Item.txLYLJKZQKYF42CX",
+          "advancementOrigin": "qiokD7d0CyBCvyHy.J2Zyxh65vm988A4V"
+        }
+      },
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "3.1.1",
+        "coreVersion": "11.315",
+        "createdTime": 1711385596025,
+        "modifiedTime": 1712078120524,
+        "lastModifiedBy": "rBA71lvKhtAgMqC9"
+      },
+      "_key": "!actors.items!tsWGY3hypnjThr5r.g81ndhFP87qwoMce"
+    },
+    {
+      "folder": "vad5vnFNBGS6019n",
+      "name": "Aquatic Base Form",
+      "type": "feat",
+      "_id": "lxw8iYHHomDcbzbh",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "system": {
+        "description": {
+          "value": "<p>Free Evolutions: </p><p>@UUID[Compendium.summoner-class-for-5e.summoner-class-items.Item.tftWSjnP0aGb7Y03]{Evolution: Bite}</p><p>@UUID[Compendium.summoner-class-for-5e.summoner-class-items.Item.B0ubaNwxhgydVo7i]{Evolution: Swim} x2</p><p>@UUID[Compendium.summoner-class-for-5e.summoner-class-items.Item.WaHyIkyYkq9a6047]{Evolution: Improved Natural Armor}</p>",
+          "chat": ""
+        },
+        "source": {},
+        "activation": {
+          "type": "",
+          "cost": null,
+          "condition": ""
+        },
+        "duration": {
+          "value": "",
+          "units": ""
+        },
+        "cover": null,
+        "crewed": false,
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": "",
+          "prompt": true
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null,
+          "recovery": "",
+          "prompt": true
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null,
+          "scale": false
+        },
+        "ability": null,
+        "actionType": "",
+        "attack": {
+          "bonus": "",
+          "flat": false
+        },
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "summons": null,
+        "type": {
+          "value": "class",
+          "subtype": ""
+        },
+        "properties": [],
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "effects": [
+        {
+          "name": "Set abilities",
+          "icon": "systems/dnd5e/icons/svg/items/feature.svg",
+          "origin": "Compendium.summoner-class-for-5e.summoner-class-items.Item.GispiXhwAWfiznDG",
+          "duration": {
+            "rounds": 1,
+            "startTime": 0,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "_id": "OyrEBd5pAnNDPx0V",
+          "changes": [
+            {
+              "key": "system.abilities.str.value",
+              "mode": 5,
+              "value": "16",
+              "priority": null
+            },
+            {
+              "key": "system.abilities.dex.value",
+              "mode": 5,
+              "value": "12",
+              "priority": null
+            },
+            {
+              "key": "system.abilities.con.value",
+              "mode": 5,
+              "value": "13",
+              "priority": null
+            },
+            {
+              "key": "system.abilities.int.value",
+              "mode": 5,
+              "value": "7",
+              "priority": null
+            },
+            {
+              "key": "system.abilities.wis.value",
+              "mode": 5,
+              "value": "10",
+              "priority": null
+            },
+            {
+              "key": "system.abilities.cha.value",
+              "mode": 5,
+              "value": "11",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "transfer": true,
+          "statuses": [],
+          "flags": {},
+          "tint": null,
+          "_key": "!actors.items.effects!tsWGY3hypnjThr5r.lxw8iYHHomDcbzbh.OyrEBd5pAnNDPx0V"
+        }
+      ],
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "rBA71lvKhtAgMqC9": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.summoner-class-for-5e.summoner-class-items.Item.GispiXhwAWfiznDG"
+        }
+      },
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "3.1.1",
+        "coreVersion": "11.315",
+        "createdTime": 1712072060698,
+        "modifiedTime": 1712078589300,
+        "lastModifiedBy": "rBA71lvKhtAgMqC9"
+      },
+      "_key": "!actors.items!tsWGY3hypnjThr5r.lxw8iYHHomDcbzbh"
+    },
+    {
+      "folder": "qXcBmVAAou9ssRP6",
+      "name": "Evolution: Swim",
+      "type": "feat",
+      "_id": "WVqpx2rSt3mv487A",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "system": {
+        "description": {
+          "value": "",
+          "chat": ""
+        },
+        "source": {},
+        "activation": {
+          "type": "",
+          "cost": null,
+          "condition": ""
+        },
+        "duration": {
+          "value": "",
+          "units": ""
+        },
+        "cover": null,
+        "crewed": false,
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": "",
+          "prompt": true
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null,
+          "recovery": "",
+          "prompt": true
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null,
+          "scale": false
+        },
+        "ability": null,
+        "actionType": "",
+        "attack": {
+          "bonus": "",
+          "flat": false
+        },
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "summons": null,
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "properties": [],
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "effects": [
+        {
+          "name": "Swim",
+          "icon": "systems/dnd5e/icons/svg/items/feature.svg",
+          "origin": "Compendium.summoner-class-for-5e.summoner-class-items.Item.B0ubaNwxhgydVo7i",
+          "duration": {
+            "rounds": 1,
+            "startTime": 0,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "_id": "Af7L6LWXMMJUDUvH",
+          "changes": [
+            {
+              "key": "system.attributes.movement.swim",
+              "mode": 2,
+              "value": "20",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "transfer": true,
+          "statuses": [],
+          "flags": {},
+          "tint": null,
+          "_key": "!actors.items.effects!tsWGY3hypnjThr5r.WVqpx2rSt3mv487A.Af7L6LWXMMJUDUvH"
+        }
+      ],
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "rBA71lvKhtAgMqC9": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.summoner-class-for-5e.summoner-class-items.Item.B0ubaNwxhgydVo7i"
+        }
+      },
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "3.1.1",
+        "coreVersion": "11.315",
+        "createdTime": 1712078314265,
+        "modifiedTime": 1712078609437,
+        "lastModifiedBy": "rBA71lvKhtAgMqC9"
+      },
+      "_key": "!actors.items!tsWGY3hypnjThr5r.WVqpx2rSt3mv487A"
+    },
+    {
+      "folder": "qXcBmVAAou9ssRP6",
+      "name": "Evolution: Swim",
+      "type": "feat",
+      "_id": "hG7t9ZA8j5bSuwTQ",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "system": {
+        "description": {
+          "value": "",
+          "chat": ""
+        },
+        "source": {},
+        "activation": {
+          "type": "",
+          "cost": null,
+          "condition": ""
+        },
+        "duration": {
+          "value": "",
+          "units": ""
+        },
+        "cover": null,
+        "crewed": false,
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": "",
+          "prompt": true
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null,
+          "recovery": "",
+          "prompt": true
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null,
+          "scale": false
+        },
+        "ability": null,
+        "actionType": "",
+        "attack": {
+          "bonus": "",
+          "flat": false
+        },
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "summons": null,
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "properties": [],
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "effects": [
+        {
+          "name": "Swim",
+          "icon": "systems/dnd5e/icons/svg/items/feature.svg",
+          "origin": "Compendium.summoner-class-for-5e.summoner-class-items.Item.B0ubaNwxhgydVo7i",
+          "duration": {
+            "rounds": 1,
+            "startTime": 0,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "_id": "Af7L6LWXMMJUDUvH",
+          "changes": [
+            {
+              "key": "system.attributes.movement.swim",
+              "mode": 2,
+              "value": "20",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "transfer": true,
+          "statuses": [],
+          "flags": {},
+          "tint": null,
+          "_key": "!actors.items.effects!tsWGY3hypnjThr5r.hG7t9ZA8j5bSuwTQ.Af7L6LWXMMJUDUvH"
+        }
+      ],
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "rBA71lvKhtAgMqC9": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.summoner-class-for-5e.summoner-class-items.Item.B0ubaNwxhgydVo7i"
+        }
+      },
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "3.1.1",
+        "coreVersion": "11.315",
+        "createdTime": 1712078314265,
+        "modifiedTime": 1712078611755,
+        "lastModifiedBy": "rBA71lvKhtAgMqC9"
+      },
+      "_key": "!actors.items!tsWGY3hypnjThr5r.hG7t9ZA8j5bSuwTQ"
+    },
+    {
+      "folder": "qXcBmVAAou9ssRP6",
+      "name": "Evolution: Improved Natural Armor",
+      "type": "feat",
+      "_id": "AZOqMRUNIv7otv7w",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "system": {
+        "description": {
+          "value": "",
+          "chat": ""
+        },
+        "source": {},
+        "activation": {
+          "type": "",
+          "cost": null,
+          "condition": ""
+        },
+        "duration": {
+          "value": "",
+          "units": ""
+        },
+        "cover": null,
+        "crewed": false,
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": "",
+          "prompt": true
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null,
+          "recovery": "",
+          "prompt": true
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null,
+          "scale": false
+        },
+        "ability": null,
+        "actionType": "",
+        "attack": {
+          "bonus": "",
+          "flat": false
+        },
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "summons": null,
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "properties": [],
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "effects": [
+        {
+          "name": "Improved Natural Armor",
+          "icon": "systems/dnd5e/icons/svg/items/feature.svg",
+          "origin": "Compendium.summoner-class-for-5e.summoner-class-items.Item.WaHyIkyYkq9a6047",
+          "duration": {
+            "rounds": 1,
+            "startTime": 0,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "_id": "cODbSpqOwBGLCVOk",
+          "changes": [
+            {
+              "key": "system.attributes.ac.flat",
+              "mode": 2,
+              "value": "2",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "transfer": true,
+          "statuses": [],
+          "flags": {},
+          "tint": null,
+          "_key": "!actors.items.effects!tsWGY3hypnjThr5r.AZOqMRUNIv7otv7w.cODbSpqOwBGLCVOk"
+        }
+      ],
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "rBA71lvKhtAgMqC9": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.summoner-class-for-5e.summoner-class-items.Item.WaHyIkyYkq9a6047"
+        }
+      },
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "3.1.1",
+        "coreVersion": "11.315",
+        "createdTime": 1712072410153,
+        "modifiedTime": 1712078617824,
+        "lastModifiedBy": "rBA71lvKhtAgMqC9"
+      },
+      "_key": "!actors.items!tsWGY3hypnjThr5r.AZOqMRUNIv7otv7w"
+    },
+    {
+      "folder": "qXcBmVAAou9ssRP6",
+      "name": "Evolution: Bite",
+      "type": "feat",
+      "_id": "8nZf14fiS8TYzv9m",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "system": {
+        "description": {
+          "value": "<p>An eidolon’s maw is full of razor-sharp teeth, giving it a bite attack. The bite deals 1d6 points of piercing damage (1d8 if Large, 2d6 if Huge). If the eidolon already has a bite attack, this evolution allows it to deal 1-1/2 times its Strength modifier on damage rolls made with its bite(rounded up).</p><p>Drag this item to your character sheet to gain the attack:</p><p>@UUID[Compendium.summoner-class-for-5e.summoner-class-items.Item.xw84W3Qto6w9lgSy]{Bite}</p>",
+          "chat": ""
+        },
+        "source": {},
+        "activation": {
+          "type": "",
+          "cost": null,
+          "condition": ""
+        },
+        "duration": {
+          "value": "",
+          "units": ""
+        },
+        "cover": null,
+        "crewed": false,
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": "",
+          "prompt": true
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null,
+          "recovery": "",
+          "prompt": true
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null,
+          "scale": false
+        },
+        "ability": null,
+        "actionType": "",
+        "attack": {
+          "bonus": "",
+          "flat": false
+        },
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "summons": null,
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "properties": [],
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "effects": [],
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "rBA71lvKhtAgMqC9": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.summoner-class-for-5e.summoner-class-items.Item.tftWSjnP0aGb7Y03"
+        }
+      },
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "3.1.1",
+        "coreVersion": "11.315",
+        "createdTime": 1712072397078,
+        "modifiedTime": 1712594615826,
+        "lastModifiedBy": "rBA71lvKhtAgMqC9"
+      },
+      "_key": "!actors.items!tsWGY3hypnjThr5r.8nZf14fiS8TYzv9m"
+    },
+    {
+      "folder": "qXcBmVAAou9ssRP6",
+      "name": "Bite",
+      "type": "weapon",
+      "_id": "xf2LMhoqGUurFW0B",
+      "img": "systems/dnd5e/icons/svg/items/weapon.svg",
+      "system": {
+        "description": {
+          "value": "",
+          "chat": ""
+        },
+        "source": {},
+        "identified": true,
+        "unidentified": {
+          "description": ""
+        },
+        "container": null,
+        "quantity": 1,
+        "weight": 0,
+        "price": {
+          "value": 0,
+          "denomination": "gp"
+        },
+        "rarity": "",
+        "attunement": 0,
+        "activation": {
+          "type": "",
+          "cost": null,
+          "condition": ""
+        },
+        "duration": {
+          "value": "",
+          "units": ""
+        },
+        "cover": null,
+        "crewed": false,
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": "",
+          "prompt": true
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null,
+          "recovery": "",
+          "prompt": true
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null,
+          "scale": false
+        },
+        "ability": "",
+        "actionType": "mwak",
+        "attack": {
+          "bonus": "",
+          "flat": false
+        },
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [
+            [
+              "1d6",
+              "piercing"
+            ]
+          ],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "summons": null,
+        "armor": {
+          "value": null
+        },
+        "hp": {
+          "value": null,
+          "max": null,
+          "dt": null,
+          "conditions": ""
+        },
+        "type": {
+          "value": "simpleM",
+          "baseItem": ""
+        },
+        "magicalBonus": null,
+        "properties": [],
+        "equipped": true,
+        "proficient": null
+      },
+      "effects": [],
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "rBA71lvKhtAgMqC9": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.summoner-class-for-5e.summoner-class-items.Item.xw84W3Qto6w9lgSy"
+        }
+      },
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "3.1.1",
+        "coreVersion": "11.315",
+        "createdTime": 1712073414096,
+        "modifiedTime": 1712594619192,
+        "lastModifiedBy": "rBA71lvKhtAgMqC9"
+      },
+      "_key": "!actors.items!tsWGY3hypnjThr5r.xf2LMhoqGUurFW0B"
+    }
+  ],
+  "effects": [],
+  "folder": "LTJ8E7ExwkfLjX5e",
+  "ownership": {
+    "default": 0,
+    "rBA71lvKhtAgMqC9": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.1.2",
+    "coreVersion": "11.315",
+    "createdTime": 1711350877973,
+    "modifiedTime": 1713353937691,
+    "lastModifiedBy": "rBA71lvKhtAgMqC9"
+  },
+  "_id": "tsWGY3hypnjThr5r",
+  "sort": 100000,
+  "_key": "!actors!tsWGY3hypnjThr5r"
+}

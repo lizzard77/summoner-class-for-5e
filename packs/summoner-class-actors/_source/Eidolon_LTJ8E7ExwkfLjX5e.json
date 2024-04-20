@@ -1,0 +1,19 @@
+{
+  "name": "Eidolon",
+  "sorting": "a",
+  "folder": null,
+  "type": "Actor",
+  "_id": "LTJ8E7ExwkfLjX5e",
+  "sort": 0,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.1.1",
+    "coreVersion": "11.315",
+    "createdTime": 1712594726962,
+    "modifiedTime": 1712594726962,
+    "lastModifiedBy": "rBA71lvKhtAgMqC9"
+  },
+  "_key": "!folders!LTJ8E7ExwkfLjX5e"
+}

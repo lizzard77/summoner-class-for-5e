@@ -1,0 +1,121 @@
+{
+  "name": "Friends",
+  "type": "spell",
+  "system": {
+    "source": {
+      "custom": "",
+      "book": "PHB",
+      "page": "244",
+      "license": ""
+    },
+    "description": {
+      "value": "<div class=\"rd__b  rd__b--3\"><p>For the duration, you have advantage on all Charisma checks directed at one creature of your choice that isn't hostile toward you. When the spell ends, the creature realizes that you used magic to influence its mood and becomes hostile toward you. A creature prone to violence might attack you. Another creature might seek retribution in other ways (at the DM's discretion), depending on the nature of your interaction with it.</p><div class=\"rd__spc-inline-post\"></div></div>",
+      "chat": ""
+    },
+    "actionType": "util",
+    "level": 0,
+    "school": "enc",
+    "properties": [
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "materials": {
+      "value": "a small amount of makeup applied to the face as this spell is cast",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "target": {
+      "value": 0,
+      "units": "self",
+      "type": "self",
+      "prompt": true,
+      "width": null
+    },
+    "range": {
+      "value": 0,
+      "units": "self",
+      "long": null
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "ability": null,
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "formula": "",
+    "preparation": {
+      "mode": "always",
+      "prepared": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "cover": null,
+    "crewed": false,
+    "summons": null
+  },
+  "img": "icons/consumables/drinks/alcohol-beer-mug-yellow.webp",
+  "ownership": {
+    "default": 0,
+    "rBA71lvKhtAgMqC9": 3
+  },
+  "flags": {
+    "plutonium": {
+      "page": "spells.html",
+      "source": "PHB",
+      "hash": "friends_phb",
+      "propDroppable": "spell"
+    }
+  },
+  "effects": [],
+  "folder": "p18Mv3tcXOpxXnyh",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.1.1",
+    "coreVersion": "11.315",
+    "createdTime": 1711706965440,
+    "modifiedTime": 1712071572930,
+    "lastModifiedBy": "rBA71lvKhtAgMqC9"
+  },
+  "_id": "vasPyxYZOrQeNhDJ",
+  "sort": 125000,
+  "_key": "!items!vasPyxYZOrQeNhDJ"
+}

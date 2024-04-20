@@ -1,0 +1,42 @@
+{
+  "id": "summoner-class-for-5e",
+  "title": "Summoner Class for 5e",
+  "version": "0.0.1",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "description": "https://homebrewery.naturalcrit.com/share/LJao5IOSl4Hn",
+  "authors": [
+    {
+      "name": "Eldritch King"
+    },
+    {
+      "name": "Zazapan"
+    }
+  ],
+  "packs": [
+    {
+      "name": "summoner-class-items",
+      "label": "Summoner Class Items",
+      "path": "packs/summoner-class-items",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "summoner-class-actors",
+      "label": "Summoner Class Actors",
+      "path": "packs/summoner-class-actors",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
+    }
+  ]
+}

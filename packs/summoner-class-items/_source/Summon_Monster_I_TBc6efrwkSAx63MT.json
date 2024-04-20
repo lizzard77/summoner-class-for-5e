@@ -1,0 +1,141 @@
+{
+  "name": "Summon Monster I",
+  "type": "feat",
+  "_id": "TBc6efrwkSAx63MT",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>At 1st level, as an action, you can draw on your extraplanar powers to summon other creatures instead of your eidolon. The summoned creatures are bound to your plane for 1 minute per summoner level.</p><p>At 3rd level, and every 2 levels thereafter, the power of this ability increases, allowing you to summon more powerful creatures (to a maximum of summon monster IX at 17th level)</p><p>You can use this ability up to 3 + your charisma modifier. You cannot use this ability while your eidolon is active.</p><p>Treat this ability as innate spellcasting for effects like Dispel Magic. The creatures you can summon will be listed in Appendix A.</p>",
+      "chat": ""
+    },
+    "source": {},
+    "activation": {
+      "type": "action",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": "",
+    "actionType": "summ",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": {
+      "prompt": true,
+      "bonuses": {
+        "ac": "",
+        "hp": "",
+        "attackDamage": "",
+        "saveDamage": "",
+        "healing": ""
+      },
+      "profiles": [
+        {
+          "name": "",
+          "_id": "ZpZaangfcCZ290Ab",
+          "uuid": "Actor.tqk15WemJVZkxrZt"
+        },
+        {
+          "name": "",
+          "_id": "kLyn7AAiwMaow5ZB",
+          "uuid": "Compendium.dnd5e.monsters.Actor.EI8w6XjzCZICkox9"
+        },
+        {
+          "name": "",
+          "_id": "Es0vfP1ZvemsYNdK",
+          "uuid": "Compendium.dnd5e.monsters.Actor.q1YJIeIt6rK8fCKn"
+        },
+        {
+          "name": "",
+          "_id": "4ZN0hj6Gmitvb2pp",
+          "uuid": "Compendium.dnd5e.monsters.Actor.YTpL2c3NO4sOn2UA"
+        },
+        {
+          "name": "",
+          "_id": "HmiMTQ7ksKgPOIxP",
+          "uuid": "Compendium.dnd5e.monsters.Actor.D5rwVIxmfFrdyyxT"
+        },
+        {
+          "name": "",
+          "_id": "O0yc1eUIRn7JSMkK",
+          "uuid": "Compendium.dnd5e.monsters.Actor.PHO4J98zK2p4KNyc"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [
+      "mgc"
+    ],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": "zXeOsuNHDLanasQD",
+  "sort": 200000,
+  "ownership": {
+    "default": 0,
+    "rBA71lvKhtAgMqC9": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.1.1",
+    "coreVersion": "11.315",
+    "createdTime": 1711349953634,
+    "modifiedTime": 1712593705810,
+    "lastModifiedBy": "rBA71lvKhtAgMqC9"
+  },
+  "_key": "!items!TBc6efrwkSAx63MT"
+}

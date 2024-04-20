@@ -1,0 +1,19 @@
+{
+  "name": "Eidolon Evolutions",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "qXcBmVAAou9ssRP6",
+  "sort": 0,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.1.1",
+    "coreVersion": "11.315",
+    "createdTime": 1712072390731,
+    "modifiedTime": 1712072390731,
+    "lastModifiedBy": "rBA71lvKhtAgMqC9"
+  },
+  "_key": "!folders!qXcBmVAAou9ssRP6"
+}

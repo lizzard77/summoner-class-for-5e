@@ -1,0 +1,98 @@
+{
+  "folder": "zXeOsuNHDLanasQD",
+  "name": "Merge Forms",
+  "type": "feat",
+  "_id": "2Zcy3h9Hfsgg3Vqw",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>At 14th level, as an action, once per long rest you can touch your eidolon and the two merge forms.</p><p>Your eidolon transforms into an ethereal suit of armor encasing your body. The physical appearance conforms to your humanoid shape and reflects that of your eidolon.For the duration, you use your eidolon's AC instead of your own, and you gain an amount of temporary hit points equal to your eidolon's current hp.</p><p>To calculate saving throws, skill bonuses, and any other circumstance, you use your eidolon's Strength, Dexterity,and Constitution modifiers and your own Intelligence, Wisdom, and Charisma modifiers. You can cast your spells normally, or you can instead use an action to use one of your eidolon's melee attacks.</p><p>You can end the effect as a bonus action, causing your eidolon to assume its normal form in a space within 5 feet of you that you can see. If your eidolon is reduced to 0 hit points while using this ability, the effect ends and it can only be summoned again after a long rest, returning with full hit points. Any extra damage left over from the attack/effect that reduced your eidolon to 0 hit points carries over to your own body.</p>",
+      "chat": "<p>Your eidolon transforms into an ethereal suit of armor encasing your body. The physical appearance conforms to your humanoid shape and reflects that of your eidolon.For the duration, you use your eidolon's AC instead of your own, and you gain an amount of temporary hit points equal to your eidolon's current hp.</p><p>To calculate saving throws, skill bonuses, and any other circumstance, you use your eidolon's Strength, Dexterity,and Constitution modifiers and your own Intelligence, Wisdom, and Charisma modifiers. You can cast your spells normally, or you can instead use an action to use one of your eidolon's melee attacks.</p>"
+    },
+    "source": {},
+    "activation": {
+      "type": "action",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "lr",
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": "",
+    "actionType": "other",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": null,
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "rBA71lvKhtAgMqC9": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.1.0",
+    "coreVersion": "11.315",
+    "createdTime": 1711384654708,
+    "modifiedTime": 1711384763262,
+    "lastModifiedBy": "rBA71lvKhtAgMqC9"
+  },
+  "_key": "!items!2Zcy3h9Hfsgg3Vqw"
+}
