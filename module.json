@@ -1,7 +1,9 @@
 {
   "id": "summoner-class-for-5e",
   "title": "Summoner Class for 5e",
-  "version": "0.0.1",
+  "version": "#{VERSION}#",
+  "manifest": "#{MANIFEST}#",
+  "download": "#{DOWNLOAD}#",
   "compatibility": {
     "minimum": "11",
     "verified": "11"
