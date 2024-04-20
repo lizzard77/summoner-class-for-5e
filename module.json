@@ -34,6 +34,28 @@
       "label": "Summoner Class Actors",
       "path": "packs/summoner-class-actors",
       "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "summoner-class-spells",
+      "label": "Summoner Class Spells",
+      "path": "packs/summoner-class-spells",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
+    },
+    {
+      "name": "summoner-class-instructions",
+      "label": "Summoner Class Instructions",
+      "path": "packs/summoner-class-instructions",
+      "type": "JournalEntry",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"

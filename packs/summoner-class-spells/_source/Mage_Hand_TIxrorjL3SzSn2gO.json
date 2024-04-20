@@ -1,0 +1,121 @@
+{
+  "name": "Mage Hand",
+  "type": "spell",
+  "system": {
+    "source": {
+      "custom": "",
+      "book": "PHB",
+      "page": "256",
+      "license": ""
+    },
+    "description": {
+      "value": "<div class=\"rd__b  rd__b--3\"><p>A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.</p><div class=\"rd__spc-inline-post\"></div><p>You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.</p><p>The hand can't attack, activate magic items, or carry more than 10 pounds.</p></div>",
+      "chat": ""
+    },
+    "actionType": "util",
+    "level": 0,
+    "school": "con",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "target": {
+      "value": 1,
+      "units": "",
+      "type": "space",
+      "prompt": true,
+      "width": null
+    },
+    "range": {
+      "value": 30,
+      "units": "ft",
+      "long": null
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "ability": null,
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "formula": "",
+    "preparation": {
+      "mode": "always",
+      "prepared": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "cover": null,
+    "crewed": false,
+    "summons": null
+  },
+  "img": "icons/magic/light/orbs-hand-gray.webp",
+  "flags": {
+    "plutonium": {
+      "page": "spells.html",
+      "source": "PHB",
+      "hash": "mage%20hand_phb",
+      "propDroppable": "spell"
+    },
+    "core": {}
+  },
+  "effects": [],
+  "folder": "KKojVeD6jS92ETbE",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.1.2",
+    "coreVersion": "11.315",
+    "createdTime": 1711706965550,
+    "modifiedTime": 1713605517110,
+    "lastModifiedBy": "lsVoxPZLPrvQl6bW"
+  },
+  "_id": "TIxrorjL3SzSn2gO",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "lsVoxPZLPrvQl6bW": 3
+  },
+  "_key": "!items!TIxrorjL3SzSn2gO"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Level 2",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "o2uB9qhpGZg4NV7e",
+  "sort": 0,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.1.2",
+    "coreVersion": "11.315",
+    "createdTime": 1713605460837,
+    "modifiedTime": 1713605460837,
+    "lastModifiedBy": "lsVoxPZLPrvQl6bW"
+  },
+  "_key": "!folders!o2uB9qhpGZg4NV7e"
+}
