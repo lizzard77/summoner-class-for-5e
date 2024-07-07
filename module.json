@@ -17,6 +17,9 @@
       "name": "Zazapan"
     }
   ],
+  "esmodules": [
+    "src/summoner.js"
+  ],
   "packs": [
     {
       "name": "summoner-class-items",

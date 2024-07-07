@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "fvtt": "fvtt launch",
     "unpack": "fvtt package unpack -n summoner-class-items && fvtt package unpack -n summoner-class-actors",
     "pack": "fvtt package pack -n summoner-class-items && fvtt package pack -n summoner-class-actors"
   },
