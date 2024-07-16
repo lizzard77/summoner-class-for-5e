@@ -28,6 +28,21 @@ export async function getGrantedItems(description)
     return items;
 }
 
+export async function applyItems(actor, items, sourceId = "")
+{
+    const result = await actor.createEmbeddedDocuments('Item', items);
+    // set the source id. This allows us to remove the new items when the source item is removed
+    if (sourceId)
+    {
+        result.forEach(async (item) => await item.setFlag(MODULE_NAME, "source", sourceId));
+    }
+    // notify user
+    let names = result.map(i => i.name).join(", ");
+    names = names.replace(/, $/, "");
+    ui.notifications.info(`You have gained: ${names}.`);
+    return result;
+}
+
 export function fixEvolutionCost()
 {
     const items = game.packs.get(`${MODULE_NAME}.summoner-class-items`);

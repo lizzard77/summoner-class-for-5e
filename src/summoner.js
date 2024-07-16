@@ -1,21 +1,16 @@
 import { MODULE_NAME } from "./consts.js";
 import { registerSettings } from "./settings.js";
-import { fixEvolutionCost, getGrantedItems, hasGrantedItems } from "./util.js";
+import { applyItems, fixEvolutionCost, getGrantedItems, hasGrantedItems } from "./util.js";
 import { WelcomeWindow } from "./welcome.js";
 
 Hooks.once("init", () => {
     registerSettings();
     game.summoner5e = {
-        "test" : "doofus",
         fixEvolutionCost
     };
 });
 
 Hooks.once("ready", () => {
-    // Do anything you need to do when the module is ready
-    // get setting "summoner-class-for-5e", "showInstructions"
-    // if true, show instructions
-    // if false, do nothing
     if (game.settings.get("summoner-class-for-5e", "showInstructions") === true) {
         game.summoner5e.welcome = new WelcomeWindow();
         game.summoner5e.welcome.render(true);
@@ -30,15 +25,14 @@ Hooks.on("renderActorSheet", async (app, html, actor) => {
     }, 0);
 
     const poolItem = actor.items.find(i => i.name.startsWith("Evolution Pool"));
+    if (!poolItem || !actor.system.scale.eidolon) return;
+
     const total = actor.system.scale.eidolon["evolution-pool"]?.value || 0;
     const currentValue = total - cost;
     await poolItem.update({name: `Evolution Pool (Available: ${currentValue})`});
 });
 
 Hooks.on("createItem", async (item) => {  
-    if (!item.name.indexOf("(Evolution)") < 0) return;
-    if (!item.name.indexOf("Base Form") < 0) return;
-    
     const actor = item.actor;
     const description = item.system.description?.value;
 
@@ -58,7 +52,6 @@ Hooks.on("createItem", async (item) => {
         // special rule: items granted by the base form are free
         if (isBaseForm)
             addedItems.forEach(async (item) => await item.setFlag(MODULE_NAME, "cost", 0))
-        
     } 
     else 
     // if multiple items are granted, show a dialog to select one
@@ -85,7 +78,7 @@ Hooks.on("createItem", async (item) => {
     }
 });
 
-Hooks.on("deleteItem", async (item) => 
+Hooks.on("deleteItem", async(item) => 
 {
     const actor = item.actor;
     if (!actor) return;
@@ -97,18 +90,16 @@ Hooks.on("deleteItem", async (item) =>
     }
 });
 
-async function applyItems(actor, items, sourceId = "")
-{
-    const result = await actor.createEmbeddedDocuments('Item', items);
-
-    if (sourceId)
+Hooks.on("renderItemSheet", (app, html, args) => {
+    const item = args.document;
+    console.log(`Rendering item sheet for ${item.name}`);
+    const cost = item.getFlag(MODULE_NAME, "cost");
+    if (Number.isInteger(cost))
     {
-        result.forEach(async (item) => await item.setFlag(MODULE_NAME, "source", sourceId));
+        html.find(".item-properties").append(`<div class="property" id="epcost" style="margin-top: 0.5em; text-align: center;"><span>EP Cost: </span><input type="number" value=${cost} /></div>`);
+        html.find("#epcost input").change(async (ev) => {
+            const cost = parseInt(ev.target.value);
+            await item.setFlag(MODULE_NAME, "cost", cost);
+        });
     }
-
-    // notify user
-    let names = result.map(i => i.name).join(", ");
-    names = names.replace(/, $/, "");
-    ui.notifications.info(`You have gained: ${names}.`);
-    return result;
-}
+});
