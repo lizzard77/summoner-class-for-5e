@@ -1,14 +1,15 @@
 import { MODULE_NAME } from "./consts.js";
 import { registerSettings } from "./settings.js";
+import { fixEvolutionCost, getGrantedItems, hasGrantedItems } from "./util.js";
 import { WelcomeWindow } from "./welcome.js";
 
 Hooks.once("init", () => {
-    game.summoner5e = {
-        "test" : "doofus"
-    };
     registerSettings();
+    game.summoner5e = {
+        "test" : "doofus",
+        fixEvolutionCost
+    };
 });
-
 
 Hooks.once("ready", () => {
     // Do anything you need to do when the module is ready
@@ -19,24 +20,19 @@ Hooks.once("ready", () => {
         game.summoner5e.welcome = new WelcomeWindow();
         game.summoner5e.welcome.render(true);
     }
-
-    // get game pack summoner-class-for-5e.summoner-class-items
-    const items = game.packs.get(`${MODULE_NAME}.summoner-class-items`);
-    const instructions = game.packs.get(`${MODULE_NAME}.summoner-class-instructions`);
-    const actors = game.packs.get(`${MODULE_NAME}.summoner-class-actors`);
 });
 
-Hooks.on("renderActorSheet", (app, html, actor) => {
-    
-    const evolutions = actor.items.filter(item => item.name.indexOf("(Evolution)"));
-    
-    actor.items.forEach(item => {
-        if (item.name.startsWith("Evolution Pool")) {
-            const currentValue = actor.system.scale.item["evolution-pool"];
-            item.update({name: `Evolution Pool (Available: ${currentValue})`});
-        }
-    });
+Hooks.on("renderActorSheet", async (app, html, actor) => {
+    const cost = actor.items.reduce((acc, item) => {
+        const cost = parseInt(item.getFlag(MODULE_NAME, "cost")) || 0;
+        console.log(`Cost: ${item.name} ${cost}`);
+        return acc + cost;
+    }, 0);
 
+    const poolItem = actor.items.find(i => i.name.startsWith("Evolution Pool"));
+    const total = actor.system.scale.eidolon["evolution-pool"]?.value || 0;
+    const currentValue = total - cost;
+    await poolItem.update({name: `Evolution Pool (Available: ${currentValue})`});
 });
 
 Hooks.on("createItem", async (item) => {  
@@ -45,55 +41,32 @@ Hooks.on("createItem", async (item) => {
     
     const actor = item.actor;
     const description = item.system.description?.value;
-    const itemsInDescriptionRegex = "@UUID\\[(\\S+)\\]\\{([^\\}]+)\\}";
-    const matches = description.matchAll(new RegExp(itemsInDescriptionRegex, "g"));
 
-    if (!actor || !matches) 
+    if (!actor || !hasGrantedItems(description))
         return;    
-
     
-    let buttons = "";
-    let items = [];
-    for (const match of matches)
-    {
-        const fullId = match[1];
-        //const name = match[2]; // not used atm
-        const id = fullId.split(".").pop();
-        const [ _, module, compendium, rest ] = fullId.split(".");
-        const pack = game.packs.get(`${module}.${compendium}`);
-        const item = await pack?.getDocument(id);
-        if (item) 
-        {
-            buttons += `<input name="spell" id="spellSel" type="radio" value="${item._id}" />${item.name}<br />`;
-            items.push(item);
-        } else {
-            console.log(`Could not find item with id ${id}`);
-        }
-    }
-
-    if (items.length === 0) return;
+    let items = await getGrantedItems(description);
+    if (!items || items.length === 0) return;
 
     const isBaseForm = item.name.indexOf("Base Form") >= 0;
+    const sourceId = item._id;
 
-    if (items.length === 1 || isBaseForm) {
-        await actor.createEmbeddedDocuments('Item', items);
-        let names = items.map(i => i.name).join(", ");
-        names = names.replace(/, $/, "");
-        ui.notifications.info(`You have gained: ${names}.`);
+    // if only a single item is granted or this is the base form, just create the item
+    if (items.length === 1 || isBaseForm) 
+    {
+        const addedItems = await applyItems(actor, items, sourceId);
+        // special rule: items granted by the base form are free
+        if (isBaseForm)
+            addedItems.forEach(async (item) => await item.setFlag(MODULE_NAME, "cost", 0))
         
-        /*if (isBaseForm) {
-            actor.items.forEach(item => {
-                item.transferredEffects.forEach(effect => {
-                    let newChanges = effect.changes.filter(change => change.key !== "system.scale.item.evolution-pool");
-                    let ch = effect.changes.find(change => change.key === "system.scale.item.evolution-pool");
-                    if (ch) 
-                        effect.deleteEmbeddedDocuments("ActiveEffectChange", ch);
-
-                    //effect.updateEmbeddedDocuments({ changes: [newChanges] });
-                });
-            });
-        }*/
-    } else {
+    } 
+    else 
+    // if multiple items are granted, show a dialog to select one
+    {
+        let buttons = "";
+        for (const item of items)
+            buttons += `<input name="spell" id="spellSel" type="radio" value="${item._id}" />${item.name}<br />`;
+        
         // show the selection dialog
         new Dialog({
             title: "Select",
@@ -104,8 +77,7 @@ Hooks.on("createItem", async (item) => {
                     callback: async (html) => {
                         const id = html.find("input:checked").val();
                         const item = items.find(i => i._id === id);
-                        await actor.createEmbeddedDocuments('Item', [item]);
-                        ui.notifications.info(`You have gained ${item.name} from your evolution.`);
+                        await applyItems(actor, [item], sourceId);
                     }
                 }
             }
@@ -113,4 +85,30 @@ Hooks.on("createItem", async (item) => {
     }
 });
 
+Hooks.on("deleteItem", async (item) => 
+{
+    const actor = item.actor;
+    if (!actor) return;
+    const grantedItems = actor.items.filter(i => i.getFlag(MODULE_NAME, "source") === item._id);
+    if (grantedItems && grantedItems.length)
+    {
+        console.log(`Deleting ${grantedItems.length} items granted by ${item.name}`);
+        await actor.deleteEmbeddedDocuments("Item", grantedItems.map(i => i._id));
+    }
+});
 
+async function applyItems(actor, items, sourceId = "")
+{
+    const result = await actor.createEmbeddedDocuments('Item', items);
+
+    if (sourceId)
+    {
+        result.forEach(async (item) => await item.setFlag(MODULE_NAME, "source", sourceId));
+    }
+
+    // notify user
+    let names = result.map(i => i.name).join(", ");
+    names = names.replace(/, $/, "");
+    ui.notifications.info(`You have gained: ${names}.`);
+    return result;
+}

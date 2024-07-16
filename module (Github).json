@@ -1,0 +1,69 @@
+{
+  "id": "summoner-class-for-5e",
+  "title": "Summoner Class for 5e",
+  "version": "#{VERSION}#",
+  "manifest": "#{MANIFEST}#",
+  "download": "#{DOWNLOAD}#",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "description": "https://homebrewery.naturalcrit.com/share/LJao5IOSl4Hn",
+  "authors": [
+    {
+      "name": "Eldritch King"
+    },
+    {
+      "name": "Zazapan"
+    }
+  ],
+  "esmodules": [
+    "src/summoner.js"
+  ],
+  "packs": [
+    {
+      "name": "summoner-class-items",
+      "label": "Summoner Class Items",
+      "path": "packs/summoner-class-items",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "summoner-class-actors",
+      "label": "Summoner Class Actors",
+      "path": "packs/summoner-class-actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "summoner-class-spells",
+      "label": "Summoner Class Spells",
+      "path": "packs/summoner-class-spells",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
+    },
+    {
+      "name": "summoner-class-instructions",
+      "label": "Summoner Class Instructions",
+      "path": "packs/summoner-class-instructions",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
+    }
+  ]
+}
