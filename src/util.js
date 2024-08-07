@@ -1,48 +1,8 @@
 import { MODULE_NAME } from "./consts.js";
-const itemsInDescriptionRegex = "@UUID\\[(\\S+)\\]\\{([^\\}]+)\\}";
 
-export function hasGrantedItems(description)
-{
-    const matches = description.matchAll(new RegExp(itemsInDescriptionRegex, "g"));
-    return Boolean(matches);
-}
-
-export async function getGrantedItems(description)
-{
-    const matches = description.matchAll(new RegExp(itemsInDescriptionRegex, "g"));
-    let items = [];
-    for (const match of matches)
-    {
-        const fullId = match[1];
-        const [ _, module, compendium, rest ] = fullId.split(".");
-        const id = fullId.split(".").pop();
-        const pack = game.packs.get(`${module}.${compendium}`);
-        const item = await pack?.getDocument(id);
-        if (item) 
-        {
-            items.push(item);
-        } else {
-            console.log(`Could not find item with id ${id}`);
-        }
-    }
-    return items;
-}
-
-export async function applyItems(actor, items, sourceId = "")
-{
-    const result = await actor.createEmbeddedDocuments('Item', items);
-    // set the source id. This allows us to remove the new items when the source item is removed
-    if (sourceId)
-    {
-        result.forEach(async (item) => await item.setFlag(MODULE_NAME, "source", sourceId));
-    }
-    // notify user
-    let names = result.map(i => i.name).join(", ");
-    names = names.replace(/, $/, "");
-    ui.notifications.info(`You have gained: ${names}.`);
-    return result;
-}
-
+/// This function is used to fix the evolution cost of items in the summoner class items compendium
+/// It will set the cost of the item based on the folder it is in, and also remove the evolution pool effect
+/// from the item if it is present
 export function fixEvolutionCost()
 {
     const items = game.packs.get(`${MODULE_NAME}.summoner-class-items`);
@@ -75,3 +35,4 @@ export function fixEvolutionCost()
     });
     return "Done";
 }
+

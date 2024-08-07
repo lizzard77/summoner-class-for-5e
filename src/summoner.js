@@ -1,15 +1,19 @@
 import { MODULE_NAME } from "./consts.js";
 import { registerSettings } from "./settings.js";
-import { applyItems, fixEvolutionCost, getGrantedItems, hasGrantedItems } from "./util.js";
+import { fixEvolutionCost } from "./util.js";
+import { handleItemGrants } from "./itemGrants.js";
 import { WelcomeWindow } from "./welcome.js";
+import { mergeSummons } from "./summons.js";
 
 Hooks.once("init", () => {
     registerSettings();
     game.summoner5e = {
+        // easy shortcut to call the func to fixup the evolution cost
         fixEvolutionCost
     };
 });
 
+/// This hook is called when the game is ready and will show the welcome dialog if the setting is enabled
 Hooks.once("ready", () => {
     if (game.settings.get("summoner-class-for-5e", "showInstructions") === true) {
         game.summoner5e.welcome = new WelcomeWindow();
@@ -17,6 +21,7 @@ Hooks.once("ready", () => {
     }
 });
 
+// This hook will update the evolution pool item to show the current value
 Hooks.on("renderActorSheet", async (app, html, actor) => {
     const cost = actor.items.reduce((acc, item) => {
         const cost = parseInt(item.getFlag(MODULE_NAME, "cost")) || 0;
@@ -32,52 +37,21 @@ Hooks.on("renderActorSheet", async (app, html, actor) => {
     await poolItem.update({name: `Evolution Pool (Available: ${currentValue})`});
 });
 
+// Catch items that are added to  the actor and handle them - this is used to grant items to the actor
 Hooks.on("createItem", async (item) => {  
     const actor = item.actor;
-    const description = item.system.description?.value;
+    await handleItemGrants(actor, item);
 
-    if (!actor || !hasGrantedItems(description))
-        return;    
-    
-    let items = await getGrantedItems(description);
-    if (!items || items.length === 0) return;
-
-    const isBaseForm = item.name.indexOf("Base Form") >= 0;
-    const sourceId = item._id;
-
-    // if only a single item is granted or this is the base form, just create the item
-    if (items.length === 1 || isBaseForm) 
+    if (item.name.startsWith("Summon Monster "))
     {
-        const addedItems = await applyItems(actor, items, sourceId);
-        // special rule: items granted by the base form are free
-        if (isBaseForm)
-            addedItems.forEach(async (item) => await item.setFlag(MODULE_NAME, "cost", 0))
-    } 
-    else 
-    // if multiple items are granted, show a dialog to select one
-    {
-        let buttons = "";
-        for (const item of items)
-            buttons += `<input name="spell" id="spellSel" type="radio" value="${item._id}" />${item.name}<br />`;
-        
-        // show the selection dialog
-        new Dialog({
-            title: "Select",
-            content: `<p>This evolution grants you one item to choose from the following list:</p><p>${buttons}</p>`,
-            buttons: {
-                learn: {
-                    label: "Learn",
-                    callback: async (html) => {
-                        const id = html.find("input:checked").val();
-                        const item = items.find(i => i._id === id);
-                        await applyItems(actor, [item], sourceId);
-                    }
-                }
-            }
-        }).render(true);            
+        const target = actor.items.find(i => i.name === "Summon Monster");
+        const source = item;
+        await mergeSummons(target, source);
+        await actor.deleteEmbeddedDocuments("Item", [ source._id ]);
     }
 });
 
+// Catch items that are deleted and remove any items that were granted by the deleted item
 Hooks.on("deleteItem", async(item) => 
 {
     const actor = item.actor;
@@ -90,6 +64,7 @@ Hooks.on("deleteItem", async(item) =>
     }
 });
 
+// For evolution items, show the cost on the item sheet
 Hooks.on("renderItemSheet", (app, html, args) => {
     const item = args.document;
     console.log(`Rendering item sheet for ${item.name}`);
