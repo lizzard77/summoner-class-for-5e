@@ -1,9 +1,10 @@
 import { MODULE_NAME } from "./consts.js";
 import { registerSettings } from "./settings.js";
 import { fixEvolutionCost } from "./util.js";
-import { handleItemGrants } from "./itemGrants.js";
+import { handleItemGrants, handleRemoveGrants } from "./itemGrants.js";
 import { WelcomeWindow } from "./welcome.js";
 import { mergeSummons } from "./summons.js";
+import { evolutionHandlers } from "./evolutions.js";
 
 Hooks.once("init", () => {
     registerSettings();
@@ -23,10 +24,12 @@ Hooks.once("ready", () => {
 
 // This hook will update the evolution pool item to show the current value
 Hooks.on("renderActorSheet", async (app, html, actor) => {
+    // Gather the cost of all the items and update the evolution pool item
     const cost = actor.items.reduce((acc, item) => {
         const cost = parseInt(item.getFlag(MODULE_NAME, "cost")) || 0;
-        console.log(`Cost: ${item.name} ${cost}`);
-        return acc + cost;
+        const extra = parseInt(item.getFlag(MODULE_NAME, "extra")) || 0;
+        console.log(`Cost: ${item.name} ${cost}, extra EP: ${extra}`);
+        return acc + cost + extra;
     }, 0);
 
     const poolItem = actor.items.find(i => i.name.startsWith("Evolution Pool"));
@@ -49,6 +52,9 @@ Hooks.on("createItem", async (item) => {
         await mergeSummons(target, source);
         await actor.deleteEmbeddedDocuments("Item", [ source._id ]);
     }
+
+    const handler = evolutionHandlers[item.name];
+    if (handler) await handler.configure(actor, item);
 });
 
 // Catch items that are deleted and remove any items that were granted by the deleted item
@@ -56,12 +62,9 @@ Hooks.on("deleteItem", async(item) =>
 {
     const actor = item.actor;
     if (!actor) return;
-    const grantedItems = actor.items.filter(i => i.getFlag(MODULE_NAME, "source") === item._id);
-    if (grantedItems && grantedItems.length)
-    {
-        console.log(`Deleting ${grantedItems.length} items granted by ${item.name}`);
-        await actor.deleteEmbeddedDocuments("Item", grantedItems.map(i => i._id));
-    }
+    await handleRemoveGrants(actor, item);
+    const handler = evolutionHandlers[item.name];
+    if (handler) await handler.unConfigure(actor, item);
 });
 
 // For evolution items, show the cost on the item sheet
@@ -69,12 +72,35 @@ Hooks.on("renderItemSheet", (app, html, args) => {
     const item = args.document;
     console.log(`Rendering item sheet for ${item.name}`);
     const cost = item.getFlag(MODULE_NAME, "cost");
+    const extra = item.getFlag(MODULE_NAME, "extra");
+    const isFromBaseform = item.getFlag(MODULE_NAME, "fromBaseform") === true;
     if (Number.isInteger(cost))
     {
-        html.find(".item-properties").append(`<div class="property" id="epcost" style="margin-top: 0.5em; text-align: center;"><span>EP Cost: </span><input type="number" value=${cost} /></div>`);
+        const inputforCost = `<div class="property" id="epcost" style="margin-top: 0.5em;">EP Cost: ${cost}</div>`;
+        const baseFormInfo = `<div class="property" style="margin-top: 0.5em;"><span>Evolution from Base Form</span></div>`;
+        const inputforExtra = `<div class="property" id="epextra" style="margin-top: 0.5em;"><span>Extra EP:</span><br /><input type="number" size="2" value=${extra} style="text-align: center; border: 1px solid black;" /></div>`;
+
+        html.find(".item-properties").append(isFromBaseform ? baseFormInfo : inputforCost);
+        html.find(".item-properties").append(inputforExtra);
+
         html.find("#epcost input").change(async (ev) => {
             const cost = parseInt(ev.target.value);
             await item.setFlag(MODULE_NAME, "cost", cost);
         });
+        html.find("#epextra input").change(async (ev) => {
+            const extra = parseInt(ev.target.value);
+            await item.setFlag(MODULE_NAME, "extra", extra);
+        });
+    }
+});
+
+Hooks.on("updateItem", async (item, changes) => {
+    const cost = item.getFlag(MODULE_NAME, "cost");
+    const extra = item.getFlag(MODULE_NAME, "extra");
+    if ((Number.isInteger(cost) || Number.isInteger(extra)) && item.actor)
+    {
+        const actor = item.actor;
+        const handler = evolutionHandlers[item.name];
+        if (handler) await handler.update(actor, item);
     }
 });

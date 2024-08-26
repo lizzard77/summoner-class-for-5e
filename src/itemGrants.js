@@ -1,4 +1,5 @@
 import { MODULE_NAME } from "./consts.js";
+import { evolutionHandlers } from "./evolutions.js";
 const itemsInDescriptionRegex = "@UUID\\[(\\S+)\\]\\{([^\\}]+)\\}";
 
 async function getGrantedItems(description)
@@ -25,11 +26,29 @@ async function getGrantedItems(description)
 async function applyItems(actor, items, sourceId = "")
 {
     const result = await actor.createEmbeddedDocuments('Item', items);
-    // set the source id. This allows us to remove the new items when the source item is removed
     if (sourceId)
     {
-        result.forEach(async (item) => await item.setFlag(MODULE_NAME, "source", sourceId));
+        for (const item of result)
+        {
+            await item.setFlag(MODULE_NAME, "source", sourceId);
+        }
     }
+    
+    // configure the items to the actor
+    for (const item of result)
+    {
+        const handler = evolutionHandlers[item.name];
+        if (handler) await handler.configure(actor, item);
+    }
+    
+    // configure the source item as well
+    if (sourceId)
+    {
+        const sourceItem = await actor.items.get(sourceId);
+        const handler = evolutionHandlers[sourceItem.name];
+        if (handler) await handler.update(actor, sourceItem);
+    }
+
     // notify user
     let names = result.map(i => i.name).join(", ");
     names = names.replace(/, $/, "");
@@ -57,7 +76,13 @@ export async function handleItemGrants(actor, item)
         const addedItems = await applyItems(actor, items, sourceId);
         // special rule: items granted by the base form are free
         if (isBaseForm)
-            addedItems.forEach(async (item) => await item.setFlag(MODULE_NAME, "cost", 0))
+        {
+            for (const item of addedItems)
+            {
+                await item.setFlag(MODULE_NAME, "cost", 0);
+                await item.setFlag(MODULE_NAME, "fromBaseform", true);
+            }
+        }
     } 
     else 
     // if multiple items are granted, show a dialog to select one
@@ -83,3 +108,27 @@ export async function handleItemGrants(actor, item)
         }).render(true);            
     }
 }
+
+/// This function is used to remove items that were granted by a deleted item
+export async function handleRemoveGrants(actor, item)
+{
+    if (!actor) return;
+    const handler = evolutionHandlers[item.name];
+    if (handler) await handler.unConfigure(actor, item);
+
+    const grantedItems = actor.items.filter(i => i.getFlag(MODULE_NAME, "source") === item._id);
+
+    if (grantedItems && grantedItems.length)
+    {
+        // unconfigure the items to the actor
+        for (const item of grantedItems)
+        {
+            const handler = evolutionHandlers[item.name];
+            if (handler) await handler.unConfigure(actor, item);
+        }
+
+        // delete the items
+        console.log(`Deleting ${grantedItems.length} items granted by ${item.name}`);
+        await actor.deleteEmbeddedDocuments("Item", grantedItems.map(i => i._id));    
+    }
+}   

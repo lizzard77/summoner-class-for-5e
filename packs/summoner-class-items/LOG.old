@@ -1,8 +1,15 @@
-2024/07/19-08:48:06.299307 7ac6ef200640 Recovering log #147
-2024/07/19-08:48:06.305614 7ac6ef200640 Delete type=3 #145
-2024/07/19-08:48:06.305664 7ac6ef200640 Delete type=0 #147
-2024/07/19-11:22:10.443441 7ac6ece00640 Level-0 table #153: started
-2024/07/19-11:22:10.443451 7ac6ece00640 Level-0 table #153: 0 bytes OK
-2024/07/19-11:22:10.446184 7ac6ece00640 Delete type=0 #151
-2024/07/19-11:22:10.448966 7ac6ece00640 Manual compaction at level-0 from '!folders!0Xi6J83yo1QBAYLl' @ 72057594037927935 : 1 .. '!items.effects!zTaqqRddm2cho7ic.5bJU17xWPYQNi92q' @ 0 : 0; will stop at (end)
-2024/07/19-11:22:10.448985 7ac6ece00640 Manual compaction at level-1 from '!folders!0Xi6J83yo1QBAYLl' @ 72057594037927935 : 1 .. '!items.effects!zTaqqRddm2cho7ic.5bJU17xWPYQNi92q' @ 0 : 0; will stop at (end)
+2024/08/26-07:09:15.384801 7e7c6c0006c0 Recovering log #168
+2024/08/26-07:09:15.486149 7e7c6c0006c0 Delete type=0 #168
+2024/08/26-07:09:15.486195 7e7c6c0006c0 Delete type=3 #165
+2024/08/26-15:04:00.590504 7e7c6ac006c0 Level-0 table #175: started
+2024/08/26-15:04:00.592498 7e7c6ac006c0 Level-0 table #175: 10160 bytes OK
+2024/08/26-15:04:00.595187 7e7c6ac006c0 Delete type=0 #173
+2024/08/26-15:04:00.600758 7e7c6ac006c0 Manual compaction at level-0 from '!folders!0Xi6J83yo1QBAYLl' @ 72057594037927935 : 1 .. '!items.effects!zTaqqRddm2cho7ic.5bJU17xWPYQNi92q' @ 0 : 0; will stop at (end)
+2024/08/26-15:04:00.600780 7e7c6ac006c0 Manual compaction at level-1 from '!folders!0Xi6J83yo1QBAYLl' @ 72057594037927935 : 1 .. '!items.effects!zTaqqRddm2cho7ic.5bJU17xWPYQNi92q' @ 0 : 0; will stop at '!items.effects!eaEZLxeEM6OgvJUV.5bJU17xWPYQNi92q' @ 2125 : 1
+2024/08/26-15:04:00.600784 7e7c6ac006c0 Compacting 1@1 + 1@2 files
+2024/08/26-15:04:00.603846 7e7c6ac006c0 Generated table #176@1: 274 keys, 149985 bytes
+2024/08/26-15:04:00.603855 7e7c6ac006c0 Compacted 1@1 + 1@2 files => 149985 bytes
+2024/08/26-15:04:00.606592 7e7c6ac006c0 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/08/26-15:04:00.606705 7e7c6ac006c0 Delete type=2 #171
+2024/08/26-15:04:00.606835 7e7c6ac006c0 Delete type=2 #175
+2024/08/26-15:04:00.610157 7e7c6ac006c0 Manual compaction at level-1 from '!items.effects!eaEZLxeEM6OgvJUV.5bJU17xWPYQNi92q' @ 2125 : 1 .. '!items.effects!zTaqqRddm2cho7ic.5bJU17xWPYQNi92q' @ 0 : 0; will stop at (end)
