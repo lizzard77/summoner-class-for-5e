@@ -36,3 +36,22 @@ export function fixEvolutionCost()
     return "Done";
 }
 
+export async function fixBaseformEffects()
+{
+    const items = game.packs.get(`${MODULE_NAME}.summoner-class-items`);
+    items.folders.forEach(async (f) => {
+        if (f.name === "Eidolon Base Forms")
+        {
+            for (let c of f.contents) {
+                const doc = await items.getDocument(c._id);
+                if (doc.transferredEffects)
+                {
+                    for (const effect of doc.transferredEffects)
+                    {
+                        await effect.update({ isTemporary : false });
+                    }
+                }
+            }
+        }
+    });
+}

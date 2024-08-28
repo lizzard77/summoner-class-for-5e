@@ -1,6 +1,6 @@
 import { MODULE_NAME } from "./consts.js";
 import { registerSettings } from "./settings.js";
-import { fixEvolutionCost } from "./util.js";
+import { fixBaseformEffects, fixEvolutionCost } from "./util.js";
 import { handleItemGrants, handleRemoveGrants } from "./itemGrants.js";
 import { WelcomeWindow } from "./welcome.js";
 import { mergeSummons } from "./summons.js";
@@ -10,7 +10,8 @@ Hooks.once("init", () => {
     registerSettings();
     game.summoner5e = {
         // easy shortcut to call the func to fixup the evolution cost
-        fixEvolutionCost
+        fixEvolutionCost,
+        fixBaseformEffects
     };
 });
 

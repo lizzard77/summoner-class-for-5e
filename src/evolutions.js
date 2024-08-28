@@ -2,7 +2,10 @@ import { MODULE_NAME } from "./consts.js";
 
 const flight = {
     configure : async (actor, item) => {
-        await this.update(actor, item);
+        const walkingSpeed = actor.system.attributes.movement.walk;
+        const flyingSpeed = walkingSpeed;
+        await actor.update({ "system.attributes.movement.fly" : flyingSpeed});
+        ui.notifications.info(`Your flying speed is now ${flyingSpeed} ft.`);
     },
     unConfigure : async (actor, item) => {
         await actor.update({ "system.attributes.movement.fly" : 0});
