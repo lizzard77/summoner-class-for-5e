@@ -9,7 +9,7 @@ async function getGrantedItems(description)
     for (const match of matches)
     {
         const fullId = match[1];
-        const [ _, module, compendium, rest ] = fullId.split(".");
+        const [ _, module, compendium ] = fullId.split(".");
         const id = fullId.split(".").pop();
         const pack = game.packs.get(`${module}.${compendium}`);
         const item = await pack?.getDocument(id);

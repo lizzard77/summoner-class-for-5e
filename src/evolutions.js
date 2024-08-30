@@ -1,13 +1,13 @@
 import { MODULE_NAME } from "./consts.js";
 
 const flight = {
-    configure : async (actor, item) => {
+    configure : async (actor) => {
         const walkingSpeed = actor.system.attributes.movement.walk;
         const flyingSpeed = walkingSpeed;
         await actor.update({ "system.attributes.movement.fly" : flyingSpeed});
         ui.notifications.info(`Your flying speed is now ${flyingSpeed} ft.`);
     },
-    unConfigure : async (actor, item) => {
+    unConfigure : async (actor) => {
         await actor.update({ "system.attributes.movement.fly" : 0});
     },
     update : async (actor, item) => {
@@ -19,12 +19,12 @@ const flight = {
     }
 }
 
-const basicMagic = {
+const magic = {
     configure : async (actor, item) => {
         const spell = actor.items.filter(i => i.getFlag(MODULE_NAME, "source") === item._id);
         await spell.update({ "system.uses" : { "per" : "day", "max" : 1, "value" : 1 }});
     },
-    unConfigure : async (actor, item) => {
+    unConfigure : async () => {
         
     },
     update : async (actor, item) => {
@@ -39,9 +39,8 @@ const basicMagic = {
 
 export const evolutionHandlers = {
     "Flight (Evolution)" : flight,
-    "Basic Magic (Evolution)" : basicMagic,
-    "Minor Magic (Evolution)" : basicMagic,
-    "Major Magic (Evolution)" : basicMagic,
-    "Ultimate Magic (Evolution)" : basicMagic
-
+    "Basic Magic (Evolution)" : magic,
+    "Minor Magic (Evolution)" : magic,
+    "Major Magic (Evolution)" : magic,
+    "Ultimate Magic (Evolution)" : magic
 }
