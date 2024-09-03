@@ -1,7 +1,7 @@
 {
   "id": "summoner-class-for-5e",
   "title": "Summoner Class for 5e",
-  "version": "0.7",
+  "version": "0.8",
   "manifest": "https://drive.google.com/uc?export=download&id=1dWv-zbvMyhF7W6g8DrqtCUr3C2WL1dnx",
   "download": "https://drive.google.com/uc?export=download&id=17zqUHRwVqd7QyFC51ZcvTXT68JwZWHPX",
   "compatibility": {
@@ -11,10 +11,12 @@
   "description": "https://homebrewery.naturalcrit.com/share/LJao5IOSl4Hn",
   "authors": [
     {
-      "name": "Eldritch King"
+      "name": "Eldritch King",
+      "flags": {}
     },
     {
-      "name": "Zazapan"
+      "name": "Zazapan",
+      "flags": {}
     }
   ],
   "esmodules": [
@@ -44,26 +46,15 @@
       }
     },
     {
-      "name": "summoner-class-spells",
-      "label": "Summoner Class Spells",
-      "path": "packs/summoner-class-spells",
-      "type": "Item",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      },
-      "system": "dnd5e"
-    },
-    {
       "name": "summoner-class-instructions",
       "label": "Summoner Class Instructions",
       "path": "packs/summoner-class-instructions",
       "type": "JournalEntry",
+      "system": "dnd5e",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "system": "dnd5e"
+      }
     }
   ]
 }
