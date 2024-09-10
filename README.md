@@ -35,3 +35,11 @@ The module will show a Welcome screen with a link to the instructions included i
 * The first time an Eidolon is summoned, its character will be created in the actor directory. 
 * You can add evolutions, redistribute evolution points etc. at any time from the Eidolon's character sheet. 
 * Evolution points will be tracked in the "Evolution Pool" item.
+
+## Artwork and Content Credits
+
+Credits from the original document are listed here for reference only. This module is not a standalone work of its own, it's a technical adaption of the document at https://homebrewery.naturalcrit.com/share/LJao5IOSl4Hn . All rights remain with their respective owners. 
+
+* The cover art piece used on the welcome dialogue belongs to Graey Erb, at https://www.artstation.com/graeyerb
+* "This Conversion/Homebrew uses trademarks and/or copyrights owned by Paizo Inc., which are used under Paizo's Community Use Policy. We are expressly prohibited from charging you to use or access this content.The Conversion/Homebrewn is not published, endorsed, or specifically approved by Paizo Inc. For more information about Paizo's Community Use Policy, please visit paizo.com/communityuse. For more information about Paizo Inc. and Paizo products, please visit paizo.com."
+* "The Summoner Conversion/Homebrew is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC." 
